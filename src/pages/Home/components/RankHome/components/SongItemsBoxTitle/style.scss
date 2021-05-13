@@ -1,0 +1,13 @@
+.box_title {
+  height: 60px;
+  margin-left: 10px;
+  &--name {
+    display: block;
+    font-size: 14px;
+    color: #000;
+  }
+  &--author {
+    font-size: 12px;
+    color: #888;
+  }
+}

@@ -1,0 +1,26 @@
+.slide-thumb_item {
+  position: relative;
+  width: 122px;
+  height: 100%;
+  &:hover .slide-thumb_dialog {
+    display: block;
+  }
+}
+.slide-thumb_img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.slide-thumb_dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #8e44ad;
+  z-index: 200;
+  opacity: 0.2;
+  cursor: pointer;
+  transition: all ease-in 0.5s;
+}

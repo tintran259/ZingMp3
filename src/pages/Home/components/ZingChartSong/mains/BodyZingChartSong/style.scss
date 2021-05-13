@@ -1,0 +1,9 @@
+.body-zingchart {
+  position: relative;
+  &-list {
+    width: 100%;
+    list-style-type: none;
+    position: absolute;
+    top: 90px;
+  }
+}

@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #1c1c1c;
+}
+ul {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+.logo {
+  width: 185px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.form-search {
+  width: 335px;
+  position: relative;
+  &_input {
+    width: 100%;
+    padding: 5px 15px;
+    border: 0 none;
+    height: 29px;
+  }
+  &_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.jumb-link {
+  width: 248px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  background: none;
+  margin: 0;
+  margin-left: 20px;
+}
+.jumb-link > li {
+  float: left;
+  list-style: none;
+}
+.jumb-link > li > a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+  line-height: 50px;
+}
+.jumb-link > li > a:hover {
+  background: #000;
+  color: #a845de;
+  display: inline-block;
+  height: 100%;
+}
+.jumb-link > li > a.active {
+  background: #000;
+  color: #a845de;
+  display: inline-block;
+  height: 100%;
+}
+.pull {
+  position: absolute;
+  right: 0;
+}
+.btn-login {
+  color: #fff;
+  cursor: pointer;
+}
+.btn-login:hover {
+  text-decoration: underline;
+}

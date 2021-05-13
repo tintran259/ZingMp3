@@ -1,0 +1,25 @@
+.topichot {
+  width: 100%;
+  margin-bottom: 30px;
+  &-title {
+    display: inline-block;
+    color: #800080;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Open Sans", "segoe ui", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+  }
+}
+.list-topic {
+  list-style-type: none;
+  width: 100%;
+}
+.view-more {
+  color: #707070;
+  &:hover {
+    color: #800080;
+  }
+}
+.icon-view-more {
+  margin-left: 10px;
+}

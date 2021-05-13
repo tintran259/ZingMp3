@@ -1,0 +1,24 @@
+.zingchart-title {
+  display: inline-block;
+  color: #800080;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Open Sans", "segoe ui", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+.icon-zingchart {
+  margin-left: 5px;
+}
+.icon-play {
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  color: #6f6f6f;
+  &:hover {
+    color: #800080;
+    transition: all ease-in 0.4s;
+  }
+}
+.header-zing-chart-song-bg {
+  position: relative;
+}

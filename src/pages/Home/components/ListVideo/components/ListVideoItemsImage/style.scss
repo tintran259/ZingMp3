@@ -1,0 +1,33 @@
+.video-item_img {
+  width: 142.5px;
+  height: 80.6px;
+  cursor: pointer;
+  object-fit: cover;
+}
+.video-item_dialog {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 142.5px;
+  height: 80.6px;
+  background-color: #0000006e;
+  cursor: pointer;
+  z-index: 1000;
+  visibility: hidden;
+  &-img {
+    width: 40px;
+    transform: scale(0);
+    transition: all ease-in 0.3s;
+  }
+}
+.video-img-bg {
+  position: relative;
+}
+.video-img-bg:hover .video-item_dialog {
+  visibility: visible;
+}
+.video-item_dialog:hover .video-item_dialog-img {
+  transform: scale(0.8);
+}

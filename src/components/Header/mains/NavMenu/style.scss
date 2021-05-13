@@ -1,0 +1,148 @@
+nav {
+  width: 100%;
+  height: 40px;
+  background-color: #e4e4e4;
+}
+.separation {
+  width: 1px;
+  height: 25px !important;
+  background: #757575;
+  margin: 0 5px;
+}
+.nav-menu {
+  position: relative;
+  & > ul {
+    list-style-type: none;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+  }
+  & > ul > li {
+    float: left;
+    height: 100%;
+  }
+
+  & > ul > li > a {
+    padding: 0px 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #333333;
+  }
+  & > ul > li > a:hover {
+    background: #fff;
+    color: #a845de;
+  }
+  & > ul > li > a.home {
+    padding: 0px;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+}
+//Menu-child Zingchart .....
+.li-zingchart {
+  position: relative;
+}
+
+.children-zingchart {
+  width: 550px;
+  background: #fff;
+  border-radius: 0px;
+  background: #ffffff;
+  box-shadow: 0px 3px 8px #d9d9d9;
+
+  display: none;
+
+  padding: 15px 0px;
+  position: absolute;
+  top: 40px;
+  z-index: 200;
+}
+.li-zingchart:hover .children-zingchart {
+  display: block;
+  transition: all ease-in 0.3s;
+}
+
+.subitem > h3 {
+  text-align: center;
+}
+.subitem {
+  &-title {
+    height: 35px;
+    line-height: 35px;
+    margin: 0 20px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+  }
+  &-menu > ul {
+    list-style-type: none;
+  }
+  &-menu > ul > li {
+    list-style: none;
+    margin-left: 20px;
+    height: 32px;
+  }
+  &-menu > ul > li > a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 13px;
+    color: #636e72;
+
+    text-transform: capitalize;
+  }
+  &-menu > ul > li > a:hover {
+    color: #a845de;
+  }
+}
+
+.li-top100 {
+  position: relative;
+
+  &_child {
+    width: 171px;
+
+    display: none;
+
+    background: #fff;
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow: 0px 3px 8px #d9d9d9;
+
+    position: absolute;
+    z-index: 200;
+
+    padding: 15px 0;
+
+    & > ul {
+      list-style-type: none;
+      width: 171px;
+      & > li {
+        width: 100%;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > a {
+          color: #636e72;
+          font-size: 13px;
+          padding-left: 20px;
+
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          &:hover {
+            color: #a845de;
+          }
+        }
+      }
+    }
+  }
+  &:hover .li-top100_child {
+    display: block;
+  }
+}

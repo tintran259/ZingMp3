@@ -1,0 +1,19 @@
+.discover {
+  cursor: pointer;
+  width: 100%;
+  height: 126px;
+  position: relative;
+  padding: 10px;
+  background: url("https://static-zmp3.zadn.vn/skins/zmp3-v5.1/images/discover_background.png");
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &-dialog {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+  }
+}

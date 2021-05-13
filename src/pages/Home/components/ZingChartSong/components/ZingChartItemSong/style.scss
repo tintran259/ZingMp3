@@ -1,0 +1,66 @@
+.song-item {
+  margin-top: 20px;
+}
+.song-item-nv {
+  display: grid;
+  grid-template-columns: 40px 190px 70px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ecf0f1;
+  & > h3 {
+    font-size: 20px;
+    font-family: "Roboto", "segoe ui", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.list-control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  & > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.icon-control {
+  width: 15px;
+}
+.song-item-nv-title {
+  color: #000;
+  font-size: 14px;
+  font-family: "Roboto", "segoe ui", Helvetica, Arial, sans-serif;
+  text-transform: capitalize;
+  &:hover {
+    color: #800080;
+  }
+}
+.author-1 {
+  color: #888;
+  font-size: 12px;
+  margin-right: 5px;
+  text-transform: capitalize;
+  &:hover {
+    color: #800080;
+  }
+}
+.author-2 {
+  color: #888;
+  font-size: 12px;
+  &:hover {
+    color: #800080;
+  }
+}
+.song-item-nv-control {
+  visibility: hidden;
+}
+.song-item:hover .song-item-nv-control {
+  visibility: visible;
+}
+.top1 {
+  color: #fff;
+}

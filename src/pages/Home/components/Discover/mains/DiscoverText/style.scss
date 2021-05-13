@@ -1,0 +1,17 @@
+.discover-text {
+  position: relative;
+  width: 168px;
+  &-title > a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Roboto", "segoe ui", Helvetica, Arial, sans-serif;
+    line-height: 1.42857;
+  }
+  &-des > a {
+    color: #fff;
+    font-size: 13px;
+    font-family: "Roboto", "segoe ui", Helvetica, Arial, sans-serif;
+    line-height: 1;
+  }
+}

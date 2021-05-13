@@ -1,0 +1,33 @@
+.artist-wapper-left {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  &_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-dialog {
+    position: absolute;
+    top: 0;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000094;
+    visibility: hidden;
+    &-text {
+      color: #fff;
+      text-transform: capitalize;
+      transform: scale(0);
+      transition: all ease 0.3s;
+    }
+  }
+}
+.artist-wapper-left:hover .artist-wapper-left-dialog {
+  visibility: visible;
+}
+.artist-wapper-left-dialog:hover .artist-wapper-left-dialog-text {
+  transform: scale(1);
+}

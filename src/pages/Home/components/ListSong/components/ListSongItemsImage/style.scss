@@ -1,0 +1,31 @@
+.list-song-item_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.list-song-item_dialog {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color: #000;
+  align-items: center;
+  opacity: 0.5;
+  z-index: 200;
+  cursor: pointer;
+  visibility: hidden;
+  &-img {
+    width: 45px;
+    transform: scale(0);
+    transition: all ease-in 0.3s;
+  }
+}
+.list-song-item_bg:hover .list-song-item_dialog {
+  visibility: visible;
+}
+.list-song-item_dialog:hover .list-song-item_dialog-img {
+  transform: scale(1);
+}

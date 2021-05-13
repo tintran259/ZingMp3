@@ -1,0 +1,20 @@
+.list-video {
+  margin-bottom: 24px;
+  &-wapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 25px;
+  }
+  &_title {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-family: "Open Sans", "segoe ui", Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    color: #800080;
+    text-transform: uppercase;
+  }
+}
+.icon-right {
+  font-size: 19px;
+}
