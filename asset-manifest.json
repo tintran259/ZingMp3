@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ZingMp3/static/css/main.6bfdc086.chunk.css",
+    "main.js": "/ZingMp3/static/js/main.bbdc34bf.chunk.js",
+    "main.js.map": "/ZingMp3/static/js/main.bbdc34bf.chunk.js.map",
+    "runtime-main.js": "/ZingMp3/static/js/runtime-main.827d3612.js",
+    "runtime-main.js.map": "/ZingMp3/static/js/runtime-main.827d3612.js.map",
+    "static/css/2.54787924.chunk.css": "/ZingMp3/static/css/2.54787924.chunk.css",
+    "static/js/2.af4d2b85.chunk.js": "/ZingMp3/static/js/2.af4d2b85.chunk.js",
+    "static/js/2.af4d2b85.chunk.js.map": "/ZingMp3/static/js/2.af4d2b85.chunk.js.map",
+    "static/js/3.425002ba.chunk.js": "/ZingMp3/static/js/3.425002ba.chunk.js",
+    "static/js/3.425002ba.chunk.js.map": "/ZingMp3/static/js/3.425002ba.chunk.js.map",
+    "index.html": "/ZingMp3/index.html",
+    "static/css/2.54787924.chunk.css.map": "/ZingMp3/static/css/2.54787924.chunk.css.map",
+    "static/css/main.6bfdc086.chunk.css.map": "/ZingMp3/static/css/main.6bfdc086.chunk.css.map",
+    "static/js/2.af4d2b85.chunk.js.LICENSE.txt": "/ZingMp3/static/js/2.af4d2b85.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.827d3612.js",
+    "static/css/2.54787924.chunk.css",
+    "static/js/2.af4d2b85.chunk.js",
+    "static/css/main.6bfdc086.chunk.css",
+    "static/js/main.bbdc34bf.chunk.js"
+  ]
+}
