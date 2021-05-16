@@ -6,7 +6,7 @@ import "./style.scss";
 
 const ChartSong = () => (
   <div className="chart">
-    <img src="./image/chart.PNG" alt="alt" />
+    <img src="./assets/image/chart.PNG" alt="alt" />
   </div>
 );
 
