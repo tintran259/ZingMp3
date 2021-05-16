@@ -1,0 +1,19 @@
+.footer-infor-wapper {
+  height: 122px;
+  display: grid;
+  grid-template-columns: 80px auto;
+  align-items: center;
+  padding: 10px;
+}
+.footer-infor {
+  &-text {
+    color: #808080;
+  }
+  &-content {
+    font-size: 12px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

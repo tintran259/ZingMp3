@@ -13,19 +13,19 @@ import SongVietNamese from "../../components/SongVietNamese";
 import Artlist from "../../components/Artlist";
 
 // dataSources
-import { LIST_BANNER_SLIDER } from "../../../../mocks/Home";
+import { bannerList } from "../../../../mocks/Home";
 
 // others
 import "./style.scss";
 
 export default function WapperContent() {
-  const [imageHover, setImageHover] = useState(LIST_BANNER_SLIDER[0]);
+  const [imageHover, setImageHover] = useState(bannerList[0]);
   const hoverImage = useCallback((imgHover) => {
     setImageHover(imgHover);
   }, []);
 
   const initialProps = {
-    LIST_BANNER_SLIDER,
+    bannerList,
     hoverImage,
     imageHover,
   };

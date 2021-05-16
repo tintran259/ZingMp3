@@ -1,5 +1,12 @@
 .footer {
-  width: "100%";
+  width: 100%;
   height: 122px;
   background-color: #222428;
+}
+.footer-wapper {
+  display: grid;
+  grid-template-columns: 344px 371px 246px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
