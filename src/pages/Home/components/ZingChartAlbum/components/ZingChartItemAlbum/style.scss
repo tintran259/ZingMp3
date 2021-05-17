@@ -3,92 +3,9 @@
   grid-template-columns: 110px 180px;
   grid-column-gap: 10px;
 }
-.album-item-zing-left-bg {
-  width: 100%;
-}
-.album-item-zing-left-img {
-  width: 100%;
-  cursor: pointer;
-}
-.album-item-zing-left {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  &-dialog {
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    top: 0;
-    background-image: linear-gradient(#00000008, #252121);
-    z-index: 1;
-  }
-  &-dialog2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    cursor: pointer;
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    top: 0;
-    background: #000;
-    opacity: 0.5;
-    z-index: 4;
-    transition: all ease-in-out 0.1s;
-  }
-}
-.position-album {
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  font-size: 20px;
-  color: #fff;
-  letter-spacing: 1px;
-  z-index: 10;
-}
 .list-item-Album {
-  list-style: none;
   padding-bottom: 15px;
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 15px;
-}
-.icon-album-play {
-  transform: scale(0);
-  transition: all ease 0.1s;
-}
-.album-item-zing-left:hover .album-item-zing-left-dialog2 {
-  visibility: visible;
-}
-.album-item-zing-left-dialog2:hover .icon-album-play {
-  transform: scale(1);
-}
-.album-item-zing-right {
-  &-title {
-    cursor: pointer;
-    display: block;
-    font-size: 14px;
-    color: #000;
-    text-transform: capitalize;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    transition: all ease 0.3s;
-    &:hover {
-      color: #800080;
-    }
-  }
-  &-author {
-    cursor: pointer;
-    font-size: 12px;
-    color: #888;
-    text-transform: capitalize;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    transition: all ease 0.3s;
-    &:hover {
-      color: #800080;
-    }
-  }
+  list-style: none;
 }

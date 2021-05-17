@@ -11,7 +11,7 @@ import "./style.scss";
 
 export default function HomePage() {
   return (
-    <div className="wapper-page">
+    <div className="page-wapper">
       <WapperContent />
       <WapperSidebar />
       <WapperPartner />

@@ -11,6 +11,12 @@ const ROUTER = [
   },
   {
     id: Math.random(),
+    exact: true,
+    path: PATH.HOME_PAGE_REDIRECT,
+    component: HomePage,
+  },
+  {
+    id: Math.random(),
     exact: false,
     path: PATH.ABOUT_PAGE,
     component: AboutPage,

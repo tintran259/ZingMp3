@@ -10,7 +10,7 @@ import ZingChartMV from "../../components/ZingChartMV";
 
 export default function WapperSlidebar() {
   return (
-    <div className="Wapper-Slidebar">
+    <div className="slidebar-wapper">
       <Discover />
       <TopicHot />
       <ZingChartSong />

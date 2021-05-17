@@ -16,45 +16,6 @@
     align-items: center;
   }
 }
-.list-control {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  & > li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.icon-control {
-  width: 15px;
-}
-.song-item-nv-title {
-  color: #000;
-  font-size: 14px;
-  font-family: "Roboto", "segoe ui", Helvetica, Arial, sans-serif;
-  text-transform: capitalize;
-  &:hover {
-    color: #800080;
-  }
-}
-.author-1 {
-  color: #888;
-  font-size: 12px;
-  margin-right: 5px;
-  text-transform: capitalize;
-  &:hover {
-    color: #800080;
-  }
-}
-.author-2 {
-  color: #888;
-  font-size: 12px;
-  &:hover {
-    color: #800080;
-  }
-}
 .song-item-nv-control {
   visibility: hidden;
 }

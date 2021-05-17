@@ -1,9 +1,9 @@
 .list-item {
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin-top: 5px;
   padding: 10px 0;
+  align-items: center;
   border-bottom: 1px solid #ececec;
   &-line {
     width: 11px;

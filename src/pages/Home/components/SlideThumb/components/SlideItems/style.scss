@@ -2,7 +2,7 @@
   position: relative;
   width: 122px;
   height: 100%;
-  &:hover .slide-thumb_dialog {
+  &:hover {
     display: block;
   }
 }
@@ -23,4 +23,7 @@
   opacity: 0.2;
   cursor: pointer;
   transition: all ease-in 0.5s;
+}
+.active-img {
+  border: 2px solid #000;
 }

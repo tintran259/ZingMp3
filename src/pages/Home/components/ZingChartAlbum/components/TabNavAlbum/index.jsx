@@ -7,7 +7,7 @@ import "./style.scss";
 export default function TabNavZingChartMV({ ablumtop1 }) {
   return (
     <>
-      <ul className="body-zingchartAlbum-tab">
+      <ul className="body-zingchart-album-tab">
         <li>
           <a className="active" href="">
             Việt Nam
@@ -20,10 +20,10 @@ export default function TabNavZingChartMV({ ablumtop1 }) {
           <a href="">K - Pop</a>
         </li>
       </ul>
-      <div className="bg-zingchartAlbum">
-        <img className="bg-zingchartAlbum" src={ablumtop1.img} alt="" />
-        <div className="bg-zingchartAlbum-dialog"></div>
-        <div className="bg-zingchartAlbum-des">
+      <div className="bg-zingchart-album">
+        <img className="bg-zingchart-album" src={ablumtop1.img} alt="" />
+        <div className="bg-zingchart-album-dialog"></div>
+        <div className="bg-zingchart-album-des">
           <span className="text">{ablumtop1.position}</span>
           <div className="content">
             <span className="title">{ablumtop1.title}</span>

@@ -3,73 +3,9 @@
   grid-template-columns: 110px 180px;
   grid-column-gap: 10px;
 }
-.cart-MV-bg {
-  cursor: pointer;
-  position: relative;
-  &-dialog {
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(#ecf0f100, #000);
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-  }
-  &-dialog2 {
-    visibility: hidden;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    z-index: 3;
-    transition: all ease-in 0.1s;
-    &-img {
-      transition: all ease-in 0.1s;
-      transform: scale(0);
-    }
-  }
-  &-position {
-    font-size: 20px;
-    position: absolute;
-    left: 5px;
-    bottom: 0;
-    color: #fff;
-    letter-spacing: 1px;
-    z-index: 10;
-  }
-  &-img {
-    cursor: pointer;
-    width: 100%;
-  }
-}
-.title-MV {
-  text-transform: capitalize;
-  color: #000;
-  font-size: 14px;
-  display: block;
-}
-.author-MV {
-  text-transform: capitalize;
-  color: #888;
-  font-size: 12px;
-  margin-right: 5px;
-}
 .list-item-MV {
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 15px;
-  list-style: none;
   margin-bottom: 20px;
-}
-.cart-MV-bg:hover .cart-MV-bg-dialog2 {
-  visibility: visible;
-}
-.cart-MV-bg-dialog2:hover .cart-MV-bg-dialog2-img {
-  transform: scale(0.4);
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  list-style: none;
 }

@@ -1,5 +1,5 @@
 // libs
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 
 // components
 import SlideHome from "../../components/Slidebar";
@@ -19,18 +19,34 @@ import { bannerList } from "../../../../mocks/Home";
 import "./style.scss";
 
 export default function WapperContent() {
-  const [imageHover, setImageHover] = useState(bannerList[0]);
-  const hoverImage = useCallback((imgHover) => {
-    setImageHover(imgHover);
+  const [imageHover] = useState(bannerList[0]);
+  const [indexImage, setIndexImage] = useState(0);
+
+  useEffect(() => {
+    const loop = setInterval(() => {
+      if (indexImage === 4) {
+        setIndexImage(0);
+      } else {
+        setIndexImage(indexImage + 1);
+      }
+    }, 4000);
+    return () => {
+      clearInterval(loop);
+    };
+  }, [indexImage]);
+
+  const hoverImage = useCallback((index) => {
+    setIndexImage(index);
   }, []);
 
   const initialProps = {
     bannerList,
     hoverImage,
     imageHover,
+    indexImage,
   };
   return (
-    <div className="Wapper-Content">
+    <div className="content-wapper">
       <SlideHome {...initialProps} />
       <SlideThumb {...initialProps} />
       <RankHome />

@@ -6,3 +6,6 @@ export { default as bannerList } from "./BannerList";
 export { default as rankSongList } from "./RankSongList";
 export { default as listNewsSong } from "./NewsSongList";
 export { default as partnerList } from "./PartnerList";
+export { default as listTopic } from "./TopicHotList";
+export { default as listZingChartAlbum } from "./ZingChartAlbumList";
+export { default as listMV } from "./MvList";

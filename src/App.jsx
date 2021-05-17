@@ -11,7 +11,6 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-
         <Switch>
           {ROUTER &&
             ROUTER.map((item) => (

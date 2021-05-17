@@ -4,10 +4,10 @@ import React from "react";
 // orthers
 import "./style.scss";
 
-export default function SlideHome({ imageHover }) {
+export default function SlideHome({ bannerList, indexImage }) {
   return (
-    <div className="sildehome">
-      <img className="sildehome-img" src={imageHover.img} alt="photoo" />
+    <div className="silde-home">
+      <img className="silde-home-img" src={bannerList[indexImage] && bannerList[indexImage].img} alt="photoo" />
     </div>
   );
 }

@@ -1,0 +1,54 @@
+.album-item-zing-left {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  &-bg {
+    width: 100%;
+  }
+  &-img {
+    width: 100%;
+    cursor: pointer;
+  }
+  &-dialog {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(#00000008, #252121);
+    z-index: 1;
+  }
+  &-dialog2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    cursor: pointer;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: 4;
+    transition: all ease-in-out 0.1s;
+  }
+}
+.position-album {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+.icon-album-play {
+  transform: scale(0);
+  transition: all ease 0.3s;
+}
+.album-item-zing-left:hover .album-item-zing-left-dialog2 {
+  visibility: visible;
+}
+.album-item-zing-left-dialog2:hover .icon-album-play {
+  transform: scale(1);
+}
