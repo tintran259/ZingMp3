@@ -1,8 +1,8 @@
 import React from "react";
 
 // components
-import HeaderZingChart from "./mains/HeaderZingchartSong";
-import BodyZingChart from "./mains/BodyZingChartSong";
+import ZingChartSongHeader from "../ZingChartSongHeader";
+import ZingChartSongBody from "../ZingChartSongBody";
 
 // orthers
 import "./style.scss";
@@ -10,8 +10,8 @@ import "./style.scss";
 export default function ZingChart() {
   return (
     <section className="zingchart">
-      <HeaderZingChart />
-      <BodyZingChart />
+      <ZingChartSongHeader />
+      <ZingChartSongBody />
     </section>
   );
 }

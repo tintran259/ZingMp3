@@ -1,0 +1,29 @@
+.album-item-zing-right {
+  &-title {
+    display: block;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #000;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    &:hover {
+      color: #800080;
+    }
+  }
+  &-author {
+    transition: all ease 0.3s;
+    cursor: pointer;
+    font-size: 12px;
+    color: #888;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    &:hover {
+      color: #800080;
+    }
+  }
+}
