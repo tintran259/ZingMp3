@@ -2,9 +2,9 @@
 import React from "react";
 
 // components
-import ListSongItems from "./mains/ListSongItems";
+import ListSongItems from "../ListSongItems";
 
-// dataSources
+// mocks
 import { TopicSongList } from "../../../../mocks/Home";
 
 // styles

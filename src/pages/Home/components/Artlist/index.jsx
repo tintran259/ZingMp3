@@ -2,8 +2,8 @@
 import React from "react";
 
 // components
-import ArtistLeft from "./mains/ArtistLeft";
-import ArtistRight from "./mains/ArtistRight";
+import ArtistLeft from "../ArtistLeft";
+import ArtistRight from "../ArtistRight";
 
 // orthers
 import "./style.scss";
