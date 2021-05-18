@@ -8,6 +8,7 @@ const ROUTER = [
     exact: true,
     path: PATH.HOME_PAGE,
     component: HomePage,
+    redirect: "/",
   },
   {
     id: Math.random(),
