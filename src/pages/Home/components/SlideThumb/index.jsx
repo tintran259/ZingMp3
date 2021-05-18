@@ -2,21 +2,20 @@
 import React from "react";
 
 // components
-import SlideItems from "./components/SlideItems";
+import SlideThumbItems from "../SlideThumbItems";
 
 // orthers
 import "./style.scss";
 
 const SlideThumb = ({ bannerList, hoverImage, indexImage }) => {
   const handleHover = (item) => {
-    // eslint-disable-next-line
     hoverImage(item);
   };
   return (
     <div className="slide-thumb">
       {bannerList &&
         bannerList.map((item, index) => (
-          <SlideItems key={item.id} item={item} handleHover={handleHover} index={index} indexImage={indexImage} />
+          <SlideThumbItems key={item.id} item={item} handleHover={handleHover} index={index} indexImage={indexImage} />
         ))}
     </div>
   );
