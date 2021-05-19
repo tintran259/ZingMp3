@@ -1,0 +1,24 @@
+.song-vietnam-newest-item-title-wappper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 160px;
+}
+.song-vietnam-newest-item-title_text {
+  color: #000;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+  &:hover {
+    color: #800080;
+  }
+}
+.song-vietnam-newest-item-title_author {
+  color: #636e72;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 500;
+  &:hover {
+    color: #800080;
+  }
+}

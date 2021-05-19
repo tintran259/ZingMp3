@@ -2,16 +2,16 @@
 import React from "react";
 
 // components
-import PartnerLeft from "../../components/PartnerLeft";
-import PartnerRight from "../../components/PartnerRight";
+import PartnerTitle from "../../components/PartnerTitle";
+import PartnerListImage from "../../components/PartnerListImage";
 
 // orthers
 import "./style.scss";
 
 const WapperPartner = () => (
   <div className="partner-wapper">
-    <PartnerLeft />
-    <PartnerRight />
+    <PartnerTitle />
+    <PartnerListImage />
   </div>
 );
 

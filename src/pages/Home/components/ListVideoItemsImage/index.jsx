@@ -5,7 +5,7 @@ import React from "react";
 import "./style.scss";
 
 const ListVideoItemsImage = ({ item }) => (
-  <div className="video-img-bg">
+  <div className="list-video-item-image-wapper">
     <img className="video-item_img" src={item.img} alt="alt" />
     <div className="video-item_dialog">
       <img
