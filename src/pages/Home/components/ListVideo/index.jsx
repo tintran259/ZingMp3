@@ -2,7 +2,7 @@
 import React from "react";
 
 // components
-import ListVideoItems from "./mains/ListVideoItems";
+import ListVideoItems from "../ListVideoItems";
 
 // dataSources
 import { videoSongList } from "../../../../mocks/Home";

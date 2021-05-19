@@ -2,8 +2,8 @@
 import React from "react";
 
 // components
-import HeaderNewsSong from "./mains/HeaderNewsSong";
-import BodyNewsSong from "./mains/BodyNewsSong";
+import NewsSongHeader from "../NewsSongHeader";
+import NewsSongBody from "../NewsSongBody";
 
 // orthers
 import "./style.scss";
@@ -11,8 +11,8 @@ import "./style.scss";
 export default function NewsSong() {
   return (
     <section className="newsSong">
-      <HeaderNewsSong />
-      <BodyNewsSong />
+      <NewsSongHeader />
+      <NewsSongBody />
     </section>
   );
 }

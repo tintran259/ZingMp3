@@ -4,10 +4,10 @@ import React from "react";
 // orthers
 import "./style.scss";
 
-export default function HeaderZingChartMV() {
+export default function ZingChartAlbumHeader() {
   return (
-    <div>
-      <h1 className="zingchartMV-title">
+    <div className="zing-chart-album-header-wappper">
+      <h1 className="zing-chart-album-title">
         #ZINGCHART TUẦN - ALBUM
         <i className="fas fa-chevron-right icon-zingchart"></i>
       </h1>

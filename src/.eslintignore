@@ -3,7 +3,7 @@
 /lambda/
 /scripts/
 /config
-.stylelintrc.js
+.stylelintrc.json
 nginx.conf
 company.list
 .eslintcache

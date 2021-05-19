@@ -2,7 +2,7 @@
 import React from "react";
 
 // components
-import ListAlbumItems from "./mains/ListAlbumItems";
+import ListAlbumItems from "../ListAlbumItems";
 
 // dataSources
 import { albumList } from "../../../../mocks/Home";

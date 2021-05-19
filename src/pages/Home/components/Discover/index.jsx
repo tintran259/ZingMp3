@@ -2,8 +2,8 @@
 import React from "react";
 
 // components
-import DiscoverText from "./mains/DiscoverText";
-import DiscoverThumb from "./mains/DiscoverThumb";
+import DiscoverText from "../DiscoverText";
+import DiscoverThumb from "../DiscoverThumb";
 
 // orthers
 import "./style.scss";

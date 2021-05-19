@@ -4,13 +4,13 @@ import "./style.scss";
 
 // conponents
 import ZingChartMVHeader from "../ZingChartMVHeader";
-import ZingChartMVBody from "../ZingChartMVBody";
+import ZingChartMVMain from "../ZingChartMVMain";
 
 export default function ZingchartMV() {
   return (
-    <section className="zingchartMV">
+    <section className="zing-chart-MV-wapper">
       <ZingChartMVHeader />
-      <ZingChartMVBody />
+      <ZingChartMVMain />
     </section>
   );
 }
