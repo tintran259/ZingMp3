@@ -1,0 +1,13 @@
+.news-song-main-item-wapper {
+  position: relative;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  width: 100%;
+  list-style: none;
+}
+.news-song-item {
+  display: grid;
+  grid-template-columns: 100px 185px;
+  grid-column-gap: 15px;
+}

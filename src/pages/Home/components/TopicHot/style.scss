@@ -1,14 +1,14 @@
-.topichot {
+.topic-hot-wapper {
   margin-bottom: 30px;
   width: 100%;
-  &-title {
-    display: inline-block;
-    color: #800080;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-family: "Open Sans", "segoe ui", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-  }
+}
+.topic-hot-title {
+  display: inline-block;
+  color: #800080;
+  text-transform: uppercase;
+  font-family: "Open Sans", "segoe ui", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 .list-topic {
   width: 100%;

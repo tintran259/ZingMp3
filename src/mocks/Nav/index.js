@@ -5,3 +5,4 @@ export { default as menuVideo } from "./MenuVideo";
 export { default as menuAlbum } from "./MenuAlbum";
 export { default as menuArtist } from "./MenuArtist";
 export { default as menuVip } from "./MenuVip";
+export { default as menuItems } from "./MenuItems";

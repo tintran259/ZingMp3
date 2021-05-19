@@ -3,16 +3,16 @@ import React from "react";
 
 // components
 import NewsSongHeader from "../NewsSongHeader";
-import NewsSongBody from "../NewsSongBody";
+import NewsSongMain from "../NewsSongMain";
 
 // orthers
 import "./style.scss";
 
 export default function NewsSong() {
   return (
-    <section className="newsSong">
+    <section className="news-song-wapper">
       <NewsSongHeader />
-      <NewsSongBody />
+      <NewsSongMain />
     </section>
   );
 }

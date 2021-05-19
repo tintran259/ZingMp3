@@ -1,0 +1,15 @@
+.rank-song-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+  border-bottom: 1px solid #ececec;
+  padding: 10px 0;
+  &-line {
+    margin-right: 30px;
+    border-radius: 10px;
+    background-color: #000;
+    width: 11px;
+    height: 2px;
+  }
+}

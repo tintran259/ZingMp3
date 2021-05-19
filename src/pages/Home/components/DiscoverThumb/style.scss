@@ -1,20 +1,20 @@
-.discover-thumb {
+.discover-thumb-wapper {
   position: relative;
   width: 90px;
   height: 90px;
+}
+.discover-thumb-img {
+  width: 100%;
+  height: 100%;
+}
+.discover-thumb-dialog {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   &-img {
-    width: 100%;
-    height: 100%;
-  }
-  &-dialog {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &-img {
-      width: 45px;
-    }
+    width: 45px;
   }
 }

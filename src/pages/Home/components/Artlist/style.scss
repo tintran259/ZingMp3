@@ -1,14 +1,14 @@
-.section-artlist {
+.section-artlist-wapper {
   width: 100%;
   height: 272px;
-  &_title {
-    display: inline-block;
-    text-transform: uppercase;
-    color: #800080;
-    font-weight: 300;
-    font-family: "Open Sans", "segoe ui", Helvetica, Arial, sans-serif;
-    font-size: 26px;
-  }
+}
+.section-artlist_title {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #800080;
+  font-weight: 300;
+  font-family: "Open Sans", "segoe ui", Helvetica, Arial, sans-serif;
+  font-size: 26px;
 }
 .artist-wapper {
   display: grid;

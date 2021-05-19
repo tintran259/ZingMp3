@@ -4,11 +4,11 @@ import React, { useState, useCallback, useEffect } from "react";
 // components
 import SlideHome from "../../components/Slidebar";
 import SlideThumb from "../../components/SlideThumb";
-import RankHome from "../../components/RankHome";
+import RankHome from "../../components/RankSong";
 import ListSong from "../../components/ListSong";
 import ListVideo from "../../components/ListVideo";
 import ListAlbum from "../../components/ListAlbum";
-import SongVietNamese from "../../components/SongVietNamese";
+import SongVietNam from "../../components/SongVietNam";
 
 import Artlist from "../../components/Artlist";
 
@@ -53,7 +53,7 @@ export default function WapperContent() {
       <ListSong />
       <ListVideo />
       <ListAlbum />
-      <SongVietNamese />
+      <SongVietNam />
       <Artlist />
     </div>
   );

@@ -9,7 +9,7 @@ import ListVideoItemsTitleAndAuthor from "../ListVideoItemsTitleAndAuhtor";
 import "./style.scss";
 
 const ListVideoItems = ({ item }) => (
-  <div className="video-item">
+  <div className="list-video-item-wapper">
     <ListVideoItemsImage item={item} />
     <ListVideoItemsTitleAndAuthor item={item} />
   </div>

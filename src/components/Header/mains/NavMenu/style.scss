@@ -1,16 +1,13 @@
-nav {
+.nav-menu {
+  position: relative;
   background-color: #e4e4e4;
   width: 100%;
   height: 40px;
-}
-.separation {
-  margin: 0 5px;
-  background: #757575;
-  width: 1px;
-  height: 25px !important;
-}
-.nav-menu {
-  position: relative;
+  &-ul {
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+  }
   & > ul {
     display: flex;
     align-items: center;

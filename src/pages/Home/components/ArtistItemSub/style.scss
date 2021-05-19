@@ -1,0 +1,33 @@
+.artist-item-sub-wapper {
+  position: relative;
+}
+.artist-item-sub_img {
+  width: 98px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.artist-item-sub_dialog {
+  position: absolute;
+  top: 0;
+  width: 98px;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000c;
+  cursor: pointer;
+  visibility: hidden;
+  &-text {
+    color: #fff;
+    font-size: 12px;
+    transform: scale(0);
+    transition: all ease 0.5s;
+  }
+}
+.artist-item-sub-wapper:hover .artist-item-sub_dialog {
+  visibility: visible;
+}
+.artist-item-sub_dialog:hover .artist-item-sub_dialog-text {
+  transform: scale(1);
+}

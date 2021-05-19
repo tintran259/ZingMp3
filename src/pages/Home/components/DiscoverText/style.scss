@@ -1,6 +1,8 @@
-.discover-text {
+.discover-text-wapper {
   position: relative;
   width: 168px;
+}
+.discover-text {
   &-title > a {
     color: #fff;
     font-size: 14px;

@@ -1,0 +1,33 @@
+.artist-image-large {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  &_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-dialog {
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    background-color: #00000094;
+    width: 210px;
+    height: 210px;
+    &-text {
+      color: #fff;
+      text-transform: capitalize;
+      transform: scale(0);
+      transition: all ease 0.3s;
+    }
+  }
+}
+.artist-image-large-wapper:hover .artist-image-large-dialog {
+  visibility: visible;
+}
+.artist-image-large-dialog:hover .artist-image-large-dialog-text {
+  transform: scale(1);
+}

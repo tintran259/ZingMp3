@@ -2,22 +2,22 @@
 import React from "react";
 
 // components
-import ContainerHeaderLogo from "../../components/ContainerHeaderLogo";
-import ContainerHeaderSearch from "../../components/ContainerHeaderSearch";
-import ContainerHeaderNav from "../../components/ContainerHeaderNav";
-import ContainerHeaderButton from "../../components/ContaierHeaderButton";
+import Logo from "../../components/Logo";
+import FormSearch from "../../components/FormSearch";
+import MenuHeader from "../../components/MenuHeader";
+import ButtonLogin from "../../components/ButtonLogin";
 
 // orthers
 import "./style.scss";
 
 export default function ContainerHeader() {
   return (
-    <header className="header-wapper">
+    <header className="container-header-wapper">
       <div className="container">
-        <ContainerHeaderLogo />
-        <ContainerHeaderSearch />
-        <ContainerHeaderNav />
-        <ContainerHeaderButton />
+        <Logo />
+        <FormSearch />
+        <MenuHeader />
+        <ButtonLogin />
       </div>
     </header>
   );

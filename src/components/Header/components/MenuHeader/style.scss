@@ -1,0 +1,32 @@
+.menu-header-wapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  margin-left: 20px;
+  background: none;
+  width: 248px;
+  list-style-type: none;
+  & > li {
+    float: left;
+    list-style: none;
+    & > a {
+      padding: 0 10px;
+      text-decoration: none;
+      line-height: 50px;
+      color: #fff;
+      &:hover {
+        display: inline-block;
+        background: #000;
+        height: 100%;
+        color: #a845de;
+      }
+      &.active {
+        display: inline-block;
+        background: #000;
+        height: 100%;
+        color: #a845de;
+      }
+    }
+  }
+}
