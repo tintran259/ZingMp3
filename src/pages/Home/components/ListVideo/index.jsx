@@ -15,9 +15,6 @@ const ListVideo = () => {
   const dispatch = useDispatch();
   const videoSongList = useSelector((state) => state.Video.listVideo);
   const [page, setPage] = useState(10);
-  const [isHover, setIsHover] = useState(false);
-  console.log("ListVideo:", videoSongList);
-  console.log("isHover:", isHover);
 
   useEffect(() => {
     dispatch(asyncGetListVideo({ page }));
@@ -29,14 +26,14 @@ const ListVideo = () => {
   const handlePrePage = () => {
     setPage(page - 1);
   };
-  const handleHover = () => {
-    setIsHover(true);
-  };
-  const handleUnHover = () => {
-    setIsHover(false);
-  };
+  // const handleHover = () => {
+  //   setIsHover(true);
+  // };
+  // const handleUnHover = () => {
+  //   setIsHover(false);
+  // };
   return (
-    <section className="list-video" onMouseLeave={handleUnHover} onMouseEnter={handleHover} onFocus={handleHover}>
+    <section className="list-video">
       <h1 className="list-video_title">
         VIDEO HOT <i className="fas fa-chevron-right icon-right"></i>
       </h1>
