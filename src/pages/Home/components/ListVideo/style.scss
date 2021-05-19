@@ -1,4 +1,5 @@
 .list-video {
+  position: relative;
   margin-bottom: 24px;
   &-wapper {
     display: grid;
@@ -17,4 +18,21 @@
 }
 .icon-right {
   font-size: 19px;
+}
+.list-video-panigation {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.btn-panigation {
+  transition: all ease 0.3s;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+  &:active {
+    background-color: #2ecc71;
+    color: #fff;
+  }
 }
