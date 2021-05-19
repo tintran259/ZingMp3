@@ -2,17 +2,17 @@
 import React from "react";
 
 // components
-import HeaderZingChartAlbum from "./mains/HeaderZingChartAlbum";
-import BodyZingChartAlbum from "./mains/BodyZingChartAlbum";
+import ZingChartAlbumHeader from "../ZingChartAlbumHeader";
+import ZingChartAlbumMain from "../ZingChartAlbumMain";
 
 // orthers
 import "./style.scss";
 
 export default function ZingChartAlbum() {
   return (
-    <section className="zingchartalbum">
-      <HeaderZingChartAlbum />
-      <BodyZingChartAlbum />
+    <section className="zing-chart-album-wapper">
+      <ZingChartAlbumHeader />
+      <ZingChartAlbumMain />
     </section>
   );
 }

@@ -1,0 +1,54 @@
+.zing-chart-MV-main-items-image-wapper {
+  position: relative;
+  cursor: pointer;
+}
+.zing-chart-MV-main-items-image {
+  &-dialog {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#ecf0f100, #000);
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  &-dialog2 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    visibility: hidden;
+    cursor: pointer;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 3;
+    transition: all ease-in 0.1s;
+    &-img {
+      transition: all ease-in 0.3s;
+      transform: scale(0);
+    }
+  }
+  &-position {
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    z-index: 10;
+  }
+  &-img {
+    cursor: pointer;
+    width: 100%;
+  }
+}
+.zing-chart-MV-main-items-image-wapper:hover .zing-chart-MV-main-items-image-dialog2 {
+  visibility: visible;
+}
+.zing-chart-MV-main-items-image-dialog2:hover .zing-chart-MV-main-items-image-dialog2-img {
+  transform: scale(0.8);
+}

@@ -1,0 +1,14 @@
+.icon-control {
+  width: 15px;
+}
+.list-control {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+  & > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

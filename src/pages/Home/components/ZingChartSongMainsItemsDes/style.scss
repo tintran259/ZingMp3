@@ -1,0 +1,18 @@
+.author-1 {
+  margin-right: 5px;
+  color: #888;
+  text-transform: capitalize;
+  font-size: 12px;
+  &:hover {
+    color: #800080;
+  }
+}
+.song-item-nv-title {
+  color: #000;
+  text-transform: capitalize;
+  font-family: "Roboto", "segoe ui", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  &:hover {
+    color: #800080;
+  }
+}

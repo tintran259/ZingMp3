@@ -3,14 +3,14 @@ import React from "react";
 import "./style.scss";
 
 // conponents
-import HeaderZingChartMV from "./mains/HeaderZingChartMV";
-import BodyZingChartMV from "./mains/BodyZingChartMV";
+import ZingChartMVHeader from "../ZingChartMVHeader";
+import ZingChartMVMain from "../ZingChartMVMain";
 
 export default function ZingchartMV() {
   return (
-    <section className="zingchartMV">
-      <HeaderZingChartMV />
-      <BodyZingChartMV />
+    <section className="zing-chart-MV-wapper">
+      <ZingChartMVHeader />
+      <ZingChartMVMain />
     </section>
   );
 }

@@ -1,17 +1,17 @@
 import React from "react";
 
 // components
-import HeaderZingChart from "./mains/HeaderZingchartSong";
-import BodyZingChart from "./mains/BodyZingChartSong";
+import ZingChartSongHeader from "../ZingChartSongHeader";
+import ZingChartSongMains from "../ZingChartSongMains";
 
 // orthers
 import "./style.scss";
 
-export default function ZingChart() {
-  return (
-    <section className="zingchart">
-      <HeaderZingChart />
-      <BodyZingChart />
-    </section>
-  );
-}
+const ZingChartSong = () => (
+  <section className="zing-chart-song-wapper">
+    <ZingChartSongHeader />
+    <ZingChartSongMains />
+  </section>
+);
+
+export default ZingChartSong;
