@@ -4,10 +4,10 @@ import React from "react";
 // orthers
 import "./style.scss";
 
-export default function TopicItem({ item }) {
-  return (
-    <li className="list-topic-wapper">
-      <img className="list-topic-img" src={item.img} alt="" />
-    </li>
-  );
-}
+const TopicHotItem = ({ item }) => (
+  <li className="topic-hot-item-wapper">
+    <img className="topic-hot-item-img" src={item.img} alt="" />
+  </li>
+);
+
+export default TopicHotItem;

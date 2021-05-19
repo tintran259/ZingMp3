@@ -9,7 +9,7 @@ import ListSongItemsTitle from "../ListSongItemsTitle";
 import "./style.scss";
 
 const ListSongItems = ({ item }) => (
-  <div className="list-song-item">
+  <div className="list-song-item-wapper">
     <ListSongItemsImage item={item} />
     <ListSongItemsTitle item={item} />
   </div>

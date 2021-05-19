@@ -5,7 +5,7 @@ import React from "react";
 import "./style.scss";
 
 const ListAlbumItemsImage = ({ item }) => (
-  <div className="album-item-bg">
+  <div className="list-album-item-image-wapper">
     <img className="album-item-img" src={item.image} alt="phooto" />
     <div className="album-item-dialog">
       <img

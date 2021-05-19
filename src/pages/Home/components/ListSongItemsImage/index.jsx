@@ -5,7 +5,7 @@ import React from "react";
 import "./style.scss";
 
 const ListSongItemsImage = ({ item }) => (
-  <div className="list-song-item_bg">
+  <div className="list-song-item_image-wapper">
     <img className="list-song-item_img" src={item.img} alt="php" />
     <div className="list-song-item_dialog">
       <img

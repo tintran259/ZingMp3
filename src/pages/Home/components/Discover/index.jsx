@@ -10,7 +10,7 @@ import "./style.scss";
 
 export default function Discover() {
   return (
-    <div className="discover">
+    <div className="discover-wapper">
       <div className="discover-dialog"></div>
       <DiscoverThumb />
       <DiscoverText />

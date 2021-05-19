@@ -1,0 +1,41 @@
+.subitem {
+  &-wapper {
+    width: 150px;
+  }
+  &-title {
+    height: 35px;
+    text-transform: uppercase;
+    line-height: 35px;
+    color: #333;
+    font-weight: bold;
+  }
+  &-menu > ul {
+    width: 100%;
+    list-style-type: none;
+  }
+  &-menu > ul > li {
+    margin-left: 20px;
+    height: 32px;
+    list-style: none;
+  }
+  &-menu > ul > li > a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #636e72;
+  }
+  &-menu > ul > li > a:hover {
+    color: #a845de;
+  }
+}
+.subitem-menu-ul {
+  margin-top: 10px;
+  width: 100%;
+  list-style-type: none;
+}
+.subitem-menu-li {
+  width: 100%;
+  height: 30px;
+}
