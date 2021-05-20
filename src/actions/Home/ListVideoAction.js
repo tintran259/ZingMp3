@@ -1,11 +1,10 @@
 // contants
-import { NAME_ACTION } from "../../contants/index";
-
+import ACTION_TYPE from "../../contants/ActionType/Home/actionType";
 // API
 import HomeServices from "../../https/Home";
 
 export const actGetListVideo = (data) => ({
-  type: NAME_ACTION.GET_LIST_VIDEO,
+  type: ACTION_TYPE.GET_LIST_VIDEO,
   payload: {
     data,
   },

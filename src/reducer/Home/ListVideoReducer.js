@@ -1,5 +1,7 @@
 // contants
-import { NAME_ACTION } from "../../contants";
+import CONTANTS from "../../contants";
+
+const { ACTION_TYPE } = CONTANTS;
 
 const initialState = {
   listVideo: [],
@@ -8,7 +10,7 @@ const initialState = {
 
 const ListVideoReducer = (state = initialState, action) => {
   switch (action.type) {
-    case NAME_ACTION.GET_LIST_VIDEO:
+    case ACTION_TYPE.GET_LIST_VIDEO:
       return {
         ...state,
         listVideo: action.payload.data,

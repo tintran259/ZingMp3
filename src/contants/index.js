@@ -1,3 +1,11 @@
-export { default as PATH } from "./PATH";
-export { default as ROUTER } from "./routers/ROUTER";
-export { default as NAME_ACTION } from "./NAME_ACTION";
+import PATH from "./path";
+import ROUTER from "./routers";
+import ACTION_TYPE from "./ActionType/Home/actionType";
+
+const CONSTANTS = {
+  PATH,
+  ROUTER,
+  ACTION_TYPE,
+};
+
+export default CONSTANTS;

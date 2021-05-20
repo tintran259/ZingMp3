@@ -13,9 +13,8 @@ import "./style.scss";
 
 const ListVideo = () => {
   const dispatch = useDispatch();
-  const videoSongList = useSelector((state) => state.Video.listVideo);
+  const videoSongList = useSelector((state) => state.ListVideoReducer.listVideo);
   const [page, setPage] = useState(10);
-
   useEffect(() => {
     dispatch(asyncGetListVideo({ page }));
   }, [dispatch, page]);

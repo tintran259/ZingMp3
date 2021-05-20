@@ -1,6 +1,6 @@
-const NAME_ACTION = {
+const ACTION_TYPE_HOME = {
   GET_LIST_SONG: "GET_LIST_SONG",
   GET_LIST_VIDEO: "GET_LIST_VIDEO",
 };
 
-export default NAME_ACTION;
+export default ACTION_TYPE_HOME;

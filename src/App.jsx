@@ -2,21 +2,18 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { Route, BrowserRouter, Switch, Redirect } from "react-router-dom";
-
 // components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
 // contants
-import { ROUTER } from "./contants";
-
+import CONTANTS from "./contants";
 // store
 import Store from "./reducer";
-
 // orthers
 import "./styles.scss";
 
 function App() {
+  const { ROUTER } = CONTANTS;
   return (
     <Provider store={Store}>
       <BrowserRouter>
