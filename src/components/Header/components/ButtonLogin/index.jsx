@@ -1,13 +1,18 @@
 // libs
-import React from "react";
+import React, { useContext } from "react";
 
 // orthers
 import "./style.scss";
 
-const ButtonLogin = () => (
-  <div className="btn-login-wapper">
-    <span className="btn-login">Đăng Nhập</span>
-  </div>
-);
+import { MultiLangContext } from "../../../../context/multiLang";
+
+const ButtonLogin = () => {
+  const { dictionnary } = useContext(MultiLangContext);
+  return (
+    <div className="btn-login-wapper">
+      <span className="btn-login">{dictionnary.login}</span>
+    </div>
+  );
+};
 
 export default ButtonLogin;
