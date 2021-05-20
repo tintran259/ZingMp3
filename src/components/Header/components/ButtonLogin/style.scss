@@ -1,0 +1,11 @@
+.btn-login-wapper {
+  position: absolute;
+  right: 0;
+}
+.btn-login {
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}

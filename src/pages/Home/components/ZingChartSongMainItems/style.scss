@@ -1,0 +1,27 @@
+.song-item {
+  margin-top: 20px;
+}
+.song-item-nv {
+  display: grid;
+  grid-template-columns: 40px 190px 70px;
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: 15px;
+  & > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Roboto", "segoe ui", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+.song-item-nv-control {
+  visibility: hidden;
+}
+.song-item:hover .song-item-nv-control {
+  visibility: visible;
+}
+.top1 {
+  color: #fff;
+}

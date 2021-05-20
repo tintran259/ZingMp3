@@ -33,7 +33,7 @@ const ListVideo = () => {
   //   setIsHover(false);
   // };
   return (
-    <section className="list-video">
+    <section className="list-video-wapper">
       <h1 className="list-video_title">
         VIDEO HOT <i className="fas fa-chevron-right icon-right"></i>
       </h1>

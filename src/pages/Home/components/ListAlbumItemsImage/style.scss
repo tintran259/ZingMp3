@@ -1,27 +1,27 @@
 .album-item-img {
+  cursor: pointer;
   width: 150px;
   height: 150px;
-  cursor: pointer;
   object-fit: cover;
 }
 .album-item-dialog {
+  display: flex;
   position: absolute;
   top: 0;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  visibility: hidden;
+  background-color: #0000006e;
   width: 150px;
   height: 150px;
-  background-color: #0000006e;
-  visibility: hidden;
-  cursor: pointer;
   &_img {
     width: 45px;
     transform: scale(0);
     transition: all ease-in 0.3s;
   }
 }
-.album-item-bg:hover .album-item-dialog {
+.list-album-item-image-wapper:hover .album-item-dialog {
   visibility: visible;
 }
 .album-item-dialog:hover .album-item-dialog_img {

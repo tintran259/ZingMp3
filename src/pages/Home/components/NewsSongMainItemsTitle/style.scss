@@ -1,0 +1,11 @@
+.news-song-main-item-title {
+  &-text {
+    transition: all ease 0.4s;
+    cursor: pointer;
+    color: #000;
+    font-size: 14px;
+    &:hover {
+      color: #800080;
+    }
+  }
+}

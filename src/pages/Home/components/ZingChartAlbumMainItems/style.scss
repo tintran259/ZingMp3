@@ -1,0 +1,11 @@
+.zing-chart-album-items-innor {
+  display: grid;
+  grid-template-columns: 110px 180px;
+  grid-column-gap: 10px;
+}
+.zing-chart-album-items-wapper {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 15px;
+  list-style: none;
+}

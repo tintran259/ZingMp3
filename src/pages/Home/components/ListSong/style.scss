@@ -1,12 +1,14 @@
-.list-song {
+.list-song-wapper {
   margin-top: 60px;
   margin-bottom: 24px;
   width: 100%;
-  &-wapper {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 16px;
-  }
+}
+.list-song-main-wapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 16px;
+}
+.list-song {
   &_title {
     display: inline-block;
     margin-bottom: 30px;

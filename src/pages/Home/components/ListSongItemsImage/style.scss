@@ -23,7 +23,7 @@
     transition: all ease-in 0.3s;
   }
 }
-.list-song-item_bg:hover .list-song-item_dialog {
+.list-song-item_image-wapper:hover .list-song-item_dialog {
   visibility: visible;
 }
 .list-song-item_dialog:hover .list-song-item_dialog-img {

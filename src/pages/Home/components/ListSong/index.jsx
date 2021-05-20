@@ -12,9 +12,9 @@ import "./style.scss";
 
 export default function ListSong() {
   return (
-    <section className="list-song">
+    <section className="list-song-wapper">
       <span className="list-song_title">Tuần mới phơi phới</span>
-      <div className="list-song-wapper">
+      <div className="list-song-main-wapper">
         {TopicSongList && TopicSongList.map((item) => <ListSongItems key={item.id} item={item} />)}
       </div>
     </section>

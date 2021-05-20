@@ -1,20 +1,19 @@
-.list-video {
-  position: relative;
+.list-video-wapper {
   margin-bottom: 24px;
-  &-wapper {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 25px;
-  }
-  &_title {
-    display: inline-block;
-    margin-bottom: 30px;
-    color: #800080;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-family: "Open Sans", "segoe ui", Helvetica, Arial, sans-serif;
-    font-size: 26px;
-  }
+}
+.list-video-main-wapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 25px;
+}
+.list-video_title {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #800080;
+  text-transform: uppercase;
+  font-family: "Open Sans", "segoe ui", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 26px;
 }
 .icon-right {
   font-size: 19px;
