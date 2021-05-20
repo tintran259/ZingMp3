@@ -44,7 +44,7 @@ const ListVideo = () => {
           Next
         </button>
       </div>
-      <div className="list-video-wapper">
+      <div className="list-video-main-wapper">
         {videoSongList && videoSongList.map((item) => <ListVideoItems key={item.id} item={item} />)}
       </div>
     </section>
