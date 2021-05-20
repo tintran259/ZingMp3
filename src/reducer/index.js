@@ -1,7 +1,6 @@
 // libs
 import { createStore, applyMiddleware } from "redux";
 import Thunk from "redux-thunk";
-
 // root-reducer
 import RootReducer from "./root-reducer";
 
