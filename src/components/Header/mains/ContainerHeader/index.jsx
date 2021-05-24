@@ -1,5 +1,5 @@
 // libs
-import React from "react";
+import React, { useContext } from "react";
 
 // components
 import Logo from "../../components/Logo";
@@ -9,8 +9,10 @@ import ButtonLogin from "../../components/ButtonLogin";
 
 // orthers
 import "./style.scss";
+import { MultiLangContext } from "../../../../context/multiLang";
 
 export default function ContainerHeader() {
+  const { handleChangeVN, handleChangeEN } = useContext(MultiLangContext);
   return (
     <header className="container-header-wapper">
       <div className="container">
@@ -19,6 +21,14 @@ export default function ContainerHeader() {
         <MenuHeader />
         <ButtonLogin />
       </div>
+      <span className="language-wapper">
+        <button onClick={handleChangeEN} className="btn-lang" type="button">
+          EN
+        </button>
+        <button onClick={handleChangeVN} className="btn-lang" type="button">
+          VN
+        </button>
+      </span>
     </header>
   );
 }
