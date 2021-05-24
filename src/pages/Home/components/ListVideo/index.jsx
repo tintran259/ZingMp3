@@ -29,13 +29,33 @@ const ListVideo = () => {
   useEffect(() => {
     dispatch(asyncGetListVideo({ page }));
   }, [dispatch, page]);
-
+  // handle NextPage ;
   const handleNextPage = () => {
     setPage(page + 1);
   };
+  const debounceNextPage = (func, delay) => {
+    let timer;
+    return () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        func();
+      }, delay);
+    };
+  };
+  // handle PrePage
   const handlePrePage = () => {
     setPage(page - 1);
   };
+  const debouncePrePage = (func, delay) => {
+    let timer;
+    return () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        func();
+      }, delay);
+    };
+  };
+  // handle Hover.
   const handleHover = () => {
     setIsHovered(true);
   };
@@ -53,10 +73,15 @@ const ListVideo = () => {
         VIDEO HOT <i className="fas fa-chevron-right icon-right"></i>
       </h1>
       <div className="list-video-panigation">
-        <button disabled={page === 1 && true} onClick={handlePrePage} className="btn-panigation" type="button">
+        <button
+          disabled={page === 1 && true}
+          onClick={debouncePrePage(handlePrePage, 500)}
+          className="btn-panigation"
+          type="button"
+        >
           Pre
         </button>
-        <button onClick={handleNextPage} className="btn-panigation" type="button">
+        <button onClick={debounceNextPage(handleNextPage, 500)} className="btn-panigation" type="button">
           Next
         </button>
       </div>
