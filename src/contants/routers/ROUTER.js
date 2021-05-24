@@ -1,4 +1,4 @@
-import PATH from "../path";
+import PATH from "../PATH";
 import HomePage from "../../pages/Home";
 import AboutPage from "../../pages/About";
 

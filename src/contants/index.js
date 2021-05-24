@@ -1,10 +1,10 @@
-import PATH from "./path";
-import ROUTER from "./routers";
+import PATH from "./PATH";
+import ROUTERS from "./routers/ROUTER";
 import ACTION_TYPE from "./ActionType/Home/actionType";
 
 const CONSTANTS = {
   PATH,
-  ROUTER,
+  ROUTERS,
   ACTION_TYPE,
 };
 
