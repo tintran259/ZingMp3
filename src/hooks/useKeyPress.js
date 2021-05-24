@@ -1,11 +1,31 @@
-import { useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 
-export default function useKeypress(key, action) {
+export default function useKeypress(key, page, isHovered) {
+  const [pageItem, setPageItem] = useState(page);
   useEffect(() => {
-    function onKeyup(e) {
-      if (e.key === key) action();
+    setPageItem(page);
+  }, [page]);
+  const handleKeyUpAndKeyDown = useCallback(
+    (e) => {
+      e.preventDefault();
+      if (e.keyCode === key && key === 33) {
+        return setPageItem(pageItem + 1);
+      }
+      if (e.keyCode === key && key === 34) {
+        return setPageItem(pageItem - 1);
+      }
+      return pageItem;
+    },
+    [pageItem, key]
+  );
+  useEffect(() => {
+    if (isHovered) {
+      window.addEventListener("keydown", handleKeyUpAndKeyDown);
     }
-    window.addEventListener("keyup", onKeyup);
-    return () => window.removeEventListener("keyup", onKeyup);
-  }, [action, key]);
+    return () => {
+      window.removeEventListener("keydown", handleKeyUpAndKeyDown);
+    };
+  }, [handleKeyUpAndKeyDown, isHovered]);
+
+  return pageItem;
 }
