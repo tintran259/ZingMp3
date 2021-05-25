@@ -2,12 +2,13 @@
 import { useCallback, useEffect, useState } from "react";
 import { useEventListener } from "./useEventListener";
 
-export default function useKeypress(key, page, isHovered) {
-  // Constants
-  const { PnUp, PnDown } = key;
-  // Contructor
+// Constants
+import CONSTANTS from "../contants";
+
+export default function useKeypress(page, isHovered) {
+  const { KEY_CODE } = CONSTANTS;
+  const { PAGE_UP, PAGE_DOWN } = KEY_CODE;
   const [pageItem, setPageItem] = useState(page);
-  // life Cicle;
   useEffect(() => {
     setPageItem(page);
   }, [page]);
@@ -15,15 +16,15 @@ export default function useKeypress(key, page, isHovered) {
     (e) => {
       e.preventDefault();
       switch (e.keyCode) {
-        case PnUp:
+        case PAGE_UP:
           return setPageItem(pageItem + 1);
-        case PnDown:
+        case PAGE_DOWN:
           return setPageItem(pageItem - 1);
         default:
           return pageItem;
       }
     },
-    [pageItem, PnUp, PnDown]
+    [pageItem, PAGE_UP, PAGE_DOWN]
   );
   useEventListener(isHovered, handleKeyUpAndKeyDown);
   return pageItem;

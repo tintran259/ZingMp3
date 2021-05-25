@@ -1,6 +1,6 @@
 const KEY_CODE = {
-  PnUp: 33,
-  PnDown: 34,
+  PAGE_UP: 33,
+  PAGE_DOWN: 34,
 };
 
 export default KEY_CODE;

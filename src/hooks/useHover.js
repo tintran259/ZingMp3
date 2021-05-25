@@ -23,7 +23,7 @@ const useHover = () => {
       }
       return 0;
     },
-    [] // Recall only if ref changes
+    [ref] // Recall only if ref changes
   );
   return [ref, value];
 };

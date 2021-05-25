@@ -7,48 +7,32 @@ import { useKeyPress, useHover } from "../../../../hooks";
 import ListVideoItems from "../ListVideoItems";
 // actions
 import { asyncGetListVideo } from "../../../../actions/Home/ListVideoAction";
-// contants
-import CONSTANTS from "../../../../contants";
 // orthers
 import "./style.scss";
 
 const ListVideo = () => {
-  // Constants
-  const { KEY_CODE } = CONSTANTS;
-  // react-redux
   const dispatch = useDispatch();
   const videoSongList = useSelector((state) => state.ListVideoReducer.listVideo);
-  // contructor
-  const [page, setPage] = useState(10);
-  // custom hooks KeyDown
+  const [page, setPage] = useState(8);
   const [hoverRef, isHovered] = useHover();
-  const result = useKeyPress(KEY_CODE, page, isHovered);
-  // Event Key
+  const resultPage = useKeyPress(page, isHovered);
+  // update page when use event Key
   useEffect(() => {
-    setPage(result);
-  }, [result]);
+    setPage(resultPage);
+  }, [resultPage]);
   // fetch API
   useEffect(() => {
     dispatch(asyncGetListVideo({ page }));
   }, [dispatch, page]);
-  // handle NextPage ;
+
   const handleNextPage = () => {
     setPage(page + 1);
   };
-  const debounceNextPage = (func, delay) => {
-    let timer;
-    return () => {
-      clearTimeout(timer);
-      timer = setTimeout(() => {
-        func();
-      }, delay);
-    };
-  };
-  // handle PrePage
   const handlePrePage = () => {
     setPage(page - 1);
   };
-  const debouncePrePage = (func, delay) => {
+  // debouncing
+  const debounceNextAndPrePage = (func, delay) => {
     let timer;
     return () => {
       clearTimeout(timer);
@@ -57,7 +41,6 @@ const ListVideo = () => {
       }, delay);
     };
   };
-  // handle Hover.
   return (
     <section className="list-video-wapper" ref={hoverRef}>
       <h1 className="list-video_title">
@@ -66,13 +49,13 @@ const ListVideo = () => {
       <div className="list-video-panigation">
         <button
           disabled={page === 1 && true}
-          onClick={debouncePrePage(handlePrePage, 500)}
+          onClick={debounceNextAndPrePage(handlePrePage, 500)}
           className="btn-panigation"
           type="button"
         >
           Pre
         </button>
-        <button onClick={debounceNextPage(handleNextPage, 500)} className="btn-panigation" type="button">
+        <button onClick={debounceNextAndPrePage(handleNextPage, 500)} className="btn-panigation" type="button">
           Next
         </button>
       </div>

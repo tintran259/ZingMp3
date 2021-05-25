@@ -7,36 +7,39 @@ import { useKeyPress, useHover } from "../../../../hooks";
 import ListAlbumItems from "../ListAlbumItems";
 // actions
 import { asyncGetListAlbumHot } from "../../../../actions/Home/ListVideoAction";
-// Constants
-import CONSTANTS from "../../../../contants";
+
 // styles
 import "./style.scss";
 
 const ListAlbum = () => {
-  // Constants
-  const { KEY_CODE } = CONSTANTS;
-  // react-redux
   const dispatch = useDispatch();
   const albumList = useSelector((state) => state.ListVideoReducer.listAlbumHot);
-  // Contructor
   const [page, setPage] = useState(1);
-  // keyPress
   const [hoverRef, isHovered] = useHover();
-  const result = useKeyPress(KEY_CODE, page, isHovered);
+  const resultPage = useKeyPress(page, isHovered);
   // fetch api
   useEffect(() => {
     dispatch(asyncGetListAlbumHot({ page }));
   }, [dispatch, page]);
   // update page when use event Key
   useEffect(() => {
-    setPage(result);
-  }, [result]);
-  // handle Pre and Next pages
+    setPage(resultPage);
+  }, [resultPage]);
   const handleNextPage = () => {
     setPage(page + 1);
   };
   const handlePrePage = () => {
     setPage(page - 1);
+  };
+  // debouncing
+  const debounceNextAndPrePage = (func, delay) => {
+    let timer;
+    return () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        func();
+      }, delay);
+    };
   };
   return (
     <section className="list-album-wapper" ref={hoverRef}>
@@ -47,10 +50,20 @@ const ListAlbum = () => {
         {albumList && albumList.map((item) => <ListAlbumItems key={item.id} item={item} />)}
       </div>
       <div className="btn-next-and-pre">
-        <button disabled={page === 0 && true} onClick={handlePrePage} type="button" className="btn-inner">
+        <button
+          disabled={page === 0 && true}
+          onClick={debounceNextAndPrePage(handlePrePage, 500)}
+          type="button"
+          className="btn-inner"
+        >
           Pre
         </button>
-        <button disabled={page === 3 && true} onClick={handleNextPage} type="button" className="btn-inner">
+        <button
+          disabled={page === 3 && true}
+          onClick={debounceNextAndPrePage(handleNextPage, 500)}
+          type="button"
+          className="btn-inner"
+        >
           Next
         </button>
       </div>
