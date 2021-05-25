@@ -2,29 +2,31 @@
 import React, { memo, useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // hooks
-import { useKeyPress } from "../../../../hooks";
+import { useKeyPress, useHover } from "../../../../hooks";
 // components
 import ListVideoItems from "../ListVideoItems";
 // actions
 import { asyncGetListVideo } from "../../../../actions/Home/ListVideoAction";
-// styles
+// contants
+import CONSTANTS from "../../../../contants";
+// orthers
 import "./style.scss";
 
 const ListVideo = () => {
+  // Constants
+  const { KEY_CODE } = CONSTANTS;
+  // react-redux
   const dispatch = useDispatch();
   const videoSongList = useSelector((state) => state.ListVideoReducer.listVideo);
+  // contructor
   const [page, setPage] = useState(10);
-  const [isHovered, setIsHovered] = useState(false);
   // custom hooks KeyDown
-  const resultPageDown = useKeyPress(34, page, isHovered);
-  const resultPageUp = useKeyPress(33, page, isHovered);
+  const [hoverRef, isHovered] = useHover();
+  const result = useKeyPress(KEY_CODE, page, isHovered);
   // Event Key
   useEffect(() => {
-    setPage(resultPageUp);
-  }, [resultPageUp]);
-  useEffect(() => {
-    setPage(resultPageDown);
-  }, [resultPageDown]);
+    setPage(result);
+  }, [result]);
   // fetch API
   useEffect(() => {
     dispatch(asyncGetListVideo({ page }));
@@ -56,19 +58,8 @@ const ListVideo = () => {
     };
   };
   // handle Hover.
-  const handleHover = () => {
-    setIsHovered(true);
-  };
-  const handleUnHover = () => {
-    setIsHovered(false);
-  };
   return (
-    <section
-      className="list-video-wapper"
-      onMouseEnter={handleHover}
-      onFocus={handleHover}
-      onMouseLeave={handleUnHover}
-    >
+    <section className="list-video-wapper" ref={hoverRef}>
       <h1 className="list-video_title">
         VIDEO HOT <i className="fas fa-chevron-right icon-right"></i>
       </h1>

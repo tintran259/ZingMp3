@@ -2,41 +2,35 @@
 import React, { memo, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // hooks
-import { useKeyPress } from "../../../../hooks";
+import { useKeyPress, useHover } from "../../../../hooks";
 // components
 import ListAlbumItems from "../ListAlbumItems";
 // actions
 import { asyncGetListAlbumHot } from "../../../../actions/Home/ListVideoAction";
+// Constants
+import CONSTANTS from "../../../../contants";
 // styles
 import "./style.scss";
 
 const ListAlbum = () => {
+  // Constants
+  const { KEY_CODE } = CONSTANTS;
+  // react-redux
   const dispatch = useDispatch();
   const albumList = useSelector((state) => state.ListVideoReducer.listAlbumHot);
+  // Contructor
   const [page, setPage] = useState(1);
-  const [isHovered, setIsHovered] = useState(false);
-  console.log(page);
   // keyPress
-  const resultPageUp = useKeyPress(33, page, isHovered);
-  const resultPageDown = useKeyPress(34, page, isHovered);
-  // update page when use event Key
-  useEffect(() => {
-    if (resultPageDown < 0) {
-      setPage(0);
-    }
-    setPage(resultPageDown);
-  }, [resultPageDown]);
-  useEffect(() => {
-    if (resultPageUp > 3) {
-      setPage(3);
-    }
-    setPage(resultPageUp);
-  }, [resultPageUp]);
+  const [hoverRef, isHovered] = useHover();
+  const result = useKeyPress(KEY_CODE, page, isHovered);
   // fetch api
   useEffect(() => {
     dispatch(asyncGetListAlbumHot({ page }));
   }, [dispatch, page]);
-
+  // update page when use event Key
+  useEffect(() => {
+    setPage(result);
+  }, [result]);
   // handle Pre and Next pages
   const handleNextPage = () => {
     setPage(page + 1);
@@ -44,20 +38,8 @@ const ListAlbum = () => {
   const handlePrePage = () => {
     setPage(page - 1);
   };
-  // hover
-  const handleHover = () => {
-    setIsHovered(true);
-  };
-  const handleUnHover = () => {
-    setIsHovered(false);
-  };
   return (
-    <section
-      className="list-album-wapper"
-      onMouseLeave={handleUnHover}
-      onFocus={handleHover}
-      onMouseEnter={handleHover}
-    >
+    <section className="list-album-wapper" ref={hoverRef}>
       <h1 className="list-album_title">
         ALBUM HOT <i className="fas fa-chevron-right icon-right"></i>
       </h1>
