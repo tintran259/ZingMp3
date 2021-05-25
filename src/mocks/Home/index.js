@@ -9,3 +9,4 @@ export { default as partnerList } from "./PartnerList";
 export { default as listTopic } from "./TopicHotList";
 export { default as listZingChartAlbum } from "./ZingChartAlbumList";
 export { default as listMV } from "./MvList";
+export { default as listSong } from "./ListSong";

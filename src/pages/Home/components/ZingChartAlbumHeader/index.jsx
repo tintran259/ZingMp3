@@ -1,12 +1,11 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 export default function ZingChartAlbumHeader() {
   return (
-    <div className="zing-chart-album-header-wappper">
+    <div className="zing-chart-album-header-wrapper">
       <h1 className="zing-chart-album-title">
         #ZINGCHART TUẦN - ALBUM
         <i className="fas fa-chevron-right icon-zingchart"></i>

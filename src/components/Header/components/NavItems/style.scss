@@ -1,8 +1,8 @@
 .nav-items {
   position: relative;
-}
-.nav-items:hover .nav-children-wapper {
-  visibility: visible;
-  transition: all ease-in 0.3s;
-  background-color: #fff;
+  &:hover .nav-children-wrapper {
+    visibility: visible;
+    transition: all ease-in 0.3s;
+    background-color: #fff;
+  }
 }

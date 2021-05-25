@@ -1,10 +1,8 @@
 // libs
 import React from "react";
-
 // components
 import NewsSongMainHightlightImage from "../NewsSongMainHightlightImage";
 import NewsSongMainHightlightTitle from "../NewsSongMainHightlightTitle";
-
 // orthers
 import "./style.scss";
 

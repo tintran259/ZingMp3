@@ -1,10 +1,8 @@
 // libs
 import React from "react";
 import { Link } from "react-router-dom";
-
 // Contants
 import CONTANTS from "../../../../contants";
-
 // orthers
 import "./style.scss";
 

@@ -1,9 +1,7 @@
 // libs
 import React from "react";
-
 // components
 import SlideThumbItems from "../SlideThumbItems";
-
 // orthers
 import "./style.scss";
 

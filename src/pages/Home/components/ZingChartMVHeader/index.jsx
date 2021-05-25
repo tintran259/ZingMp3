@@ -1,11 +1,10 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 const ZingChartMVHeader = () => (
-  <div className="zing-chart-MV-header-wapper">
+  <div className="zing-chart-MV-header-wrapper">
     <h1 className="zing-chart-MV-title">
       #ZINGCHART TUẦN - MV
       <i className="fas fa-chevron-right icon-zingchart"></i>

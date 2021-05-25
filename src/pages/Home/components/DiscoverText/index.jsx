@@ -1,13 +1,11 @@
 // libs
-
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 export default function DiscoverText() {
   return (
-    <div className="discover-text-wapper">
+    <div className="discover-text-wrapper">
       <div className="discover-text-title">
         <a href="/">Dành riêng cho bạn</a>
       </div>

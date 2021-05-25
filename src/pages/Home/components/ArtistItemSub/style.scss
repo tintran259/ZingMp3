@@ -1,4 +1,4 @@
-.artist-item-sub-wapper {
+.artist-item-sub-wrapper {
   position: relative;
 }
 .artist-item-sub_img {
@@ -25,7 +25,7 @@
     transition: all ease 0.5s;
   }
 }
-.artist-item-sub-wapper:hover .artist-item-sub_dialog {
+.artist-item-sub-wrapper:hover .artist-item-sub_dialog {
   visibility: visible;
 }
 .artist-item-sub_dialog:hover .artist-item-sub_dialog-text {

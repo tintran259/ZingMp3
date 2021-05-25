@@ -1,11 +1,10 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 const SongVietNamListRightItemsImage = ({ item }) => (
-  <div className="song-vietnam-newest-item-image-wapper">
+  <div className="song-vietnam-newest-item-image-wrapper">
     <img className="song-vietnam-newest-item-image-img" src={item.image} alt="" />
     <div className="song-vietnam-newest-item-image-dialog">
       <img

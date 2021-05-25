@@ -22,10 +22,10 @@
     transform: scale(0);
     transition: all ease-in 0.3s;
   }
+  &:hover .list-song-item_dialog-img {
+    transform: scale(1);
+  }
 }
-.list-song-item_image-wapper:hover .list-song-item_dialog {
+.list-song-item_image-wrapper:hover .list-song-item_dialog {
   visibility: visible;
-}
-.list-song-item_dialog:hover .list-song-item_dialog-img {
-  transform: scale(1);
 }

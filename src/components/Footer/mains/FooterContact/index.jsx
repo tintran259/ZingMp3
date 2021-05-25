@@ -1,11 +1,10 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 const FooterContact = () => (
-  <div className="footer-contact-wapper">
+  <div className="footer-contact-wrapper">
     <ul className="footer-contact-media">
       <li className="media"></li>
       <li className="media">

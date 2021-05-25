@@ -1,14 +1,12 @@
 // libs
 import React from "react";
-
 // components
 import SubItem from "../SubItem";
-
 // orthers
 import "./style.scss";
 
 const NavChildren = ({ childrenNav }) => (
-  <div className="nav-children-wapper">
+  <div className="nav-children-wrapper">
     {childrenNav &&
       childrenNav.map(({ id, title, navChildItems }) => (
         <SubItem key={id} title={title} navChildItems={navChildItems} />

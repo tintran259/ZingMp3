@@ -5,7 +5,7 @@ import React from "react";
 import "./style.scss";
 
 const FooterInfor = () => (
-  <div className="footer-infor-wapper">
+  <div className="footer-infor-wrapper">
     <div className="footer-infor-logo">
       <img src="https://static-zmp3.zadn.vn/skins/zmp3-v5.1/images/icon_zing_mp3_60.png" alt="logo" />
     </div>

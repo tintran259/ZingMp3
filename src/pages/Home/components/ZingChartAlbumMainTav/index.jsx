@@ -1,6 +1,5 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 

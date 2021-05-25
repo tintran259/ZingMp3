@@ -1,11 +1,10 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 const ListVideoItemsImage = ({ item }) => (
-  <div className="list-video-item-image-wapper">
+  <div className="list-video-item-image-wrapper">
     <img className="video-item_img" src={item.img} alt="alt" />
     <div className="video-item_dialog">
       <img

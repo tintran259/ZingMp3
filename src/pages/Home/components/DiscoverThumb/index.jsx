@@ -1,11 +1,10 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 const DiscoverThumb = () => (
-  <div className="discover-thumb-wapper">
+  <div className="discover-thumb-wrapper">
     <div className="discover-thumb-dialog">
       <img
         className="discover-thumb-dialog-img"

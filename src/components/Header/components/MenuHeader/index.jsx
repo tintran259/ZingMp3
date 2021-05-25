@@ -1,11 +1,10 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 const MenuHeader = () => (
-  <ul className="menu-header-wapper">
+  <ul className="menu-header-wrapper">
     <li>
       <a className="active" href="#">
         MP3

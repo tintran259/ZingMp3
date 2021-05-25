@@ -1,11 +1,10 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 const RankSongBoxDesImage = ({ item }) => (
-  <div className="rank-song-box-des-image-wapper">
+  <div className="rank-song-box-des-image-wrapper">
     <img className="rank-song-box-des-image_img" src={item.img} alt="alt" />
     <div className="rank-song-box-des-image_dialog">
       <img

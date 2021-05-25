@@ -1,14 +1,11 @@
 // libs
 import React from "react";
-
 // components
 import ZingChartMVMainTav from "../ZingChartMVMainTav";
 import ZingChartMVMainHightLight from "../ZingChartMVMainHightLight";
 import ZingChartMVMainItems from "../ZingChartMVMainItems";
-
 // mocks
 import { listMV } from "../../../../mocks/Home";
-
 // orthers
 import "./style.scss";
 

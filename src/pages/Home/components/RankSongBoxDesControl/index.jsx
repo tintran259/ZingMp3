@@ -1,11 +1,10 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 const RankSongBoxDesControl = () => (
-  <div className="rank-song-box-des-control-wapper">
+  <div className="rank-song-box-des-control-wrapper">
     <a href="/">
       <img
         className="rank-song-box-des-control--icon"

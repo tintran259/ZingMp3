@@ -20,10 +20,10 @@
     transition: all ease 0.3s;
     width: 30px;
   }
+  &:hover .song-vietnam-newest-item-image-dialog_img {
+    transform: scale(0.8);
+  }
 }
-.song-vietnam-newest-item-image-wapper:hover .song-vietnam-newest-item-image-dialog {
+.song-vietnam-newest-item-image-wrapper:hover .song-vietnam-newest-item-image-dialog {
   visibility: visible;
-}
-.song-vietnam-newest-item-image-dialog:hover .song-vietnam-newest-item-image-dialog_img {
-  transform: scale(0.8);
 }

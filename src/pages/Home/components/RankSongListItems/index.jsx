@@ -1,10 +1,8 @@
 // libs
 import React from "react";
-
 // components
 import RankSongItemPosition from "../RankSongItemPosition";
 import RankSongBoxDes from "../RankSongBoxDes";
-
 // orthers
 import "./style.scss";
 

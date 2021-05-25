@@ -1,14 +1,12 @@
 import React from "react";
-
 // components
 import ZingChartSongHeader from "../ZingChartSongHeader";
 import ZingChartSongMains from "../ZingChartSongMains";
-
 // orthers
 import "./style.scss";
 
 const ZingChartSong = () => (
-  <section className="zing-chart-song-wapper">
+  <section className="zing-chart-song-wrapper">
     <ZingChartSongHeader />
     <ZingChartSongMains />
   </section>

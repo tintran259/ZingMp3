@@ -1,9 +1,7 @@
 // libs
 import React from "react";
-
 // components
 import NavChildren from "../NavChildren";
-
 // orthers
 import "./style.scss";
 

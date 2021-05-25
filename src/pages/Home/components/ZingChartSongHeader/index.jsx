@@ -1,8 +1,8 @@
 // libs
 import React, { useContext } from "react";
-
 // orthers
 import "./style.scss";
+// Context
 import { MultiLangContext } from "../../../../context/multiLang";
 
 export default function HeaderZingChart() {

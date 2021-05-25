@@ -1,11 +1,10 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 const ZingChartAlbumMainItemsImage = ({ item }) => (
-  <div className="zing-chart-MV-main-items-image-wapper">
+  <div className="zing-chart-MV-main-items-image-wrapper">
     <img className="zing-chart-MV-main-items-image-img" src={item.img} alt="" />
     <span className="zing-chart-MV-main-items-image-position">{item.position}</span>
     <div className="zing-chart-MV-main-items-image-dialog"></div>

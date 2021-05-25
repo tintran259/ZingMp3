@@ -5,7 +5,7 @@ import React from "react";
 import "./style.scss";
 
 const SubItem = ({ title, navChildItems }) => (
-  <ul className="subitem-wapper">
+  <ul className="subitem-wrapper">
     {title && <div className="subitem-title">{title}</div>}
     <ul className="subitem-menu-ul">
       {navChildItems &&

@@ -42,7 +42,7 @@ const ListVideo = () => {
     };
   };
   return (
-    <section className="list-video-wapper" ref={hoverRef}>
+    <section className="list-video-wrapper" ref={hoverRef}>
       <h1 className="list-video_title">
         VIDEO HOT <i className="fas fa-chevron-right icon-right"></i>
       </h1>
@@ -59,7 +59,7 @@ const ListVideo = () => {
           Next
         </button>
       </div>
-      <div className="list-video-main-wapper">
+      <div className="list-video-main-wrapper">
         {videoSongList && videoSongList.map((item) => <ListVideoItems key={item.id} item={item} />)}
       </div>
     </section>

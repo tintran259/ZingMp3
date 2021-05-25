@@ -21,13 +21,13 @@
     transform: scale(0);
     transition: all ease-in 0.3s;
   }
+  &:hover .video-item_dialog-img {
+    transform: scale(0.8);
+  }
 }
 .video-img-bg {
   position: relative;
 }
-.list-video-item-image-wapper:hover .video-item_dialog {
+.list-video-item-image-wrapper:hover .video-item_dialog {
   visibility: visible;
-}
-.video-item_dialog:hover .video-item_dialog-img {
-  transform: scale(0.8);
 }

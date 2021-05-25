@@ -1,14 +1,15 @@
+// libs
 import React from "react";
-import "./style.scss";
-
+// components
 import ContainerHeader from "./mains/ContainerHeader";
 import NavMenu from "./mains/NavMenu";
+// orthers
+import "./style.scss";
 
-export default function Header() {
-  return (
-    <>
-      <ContainerHeader />
-      <NavMenu />
-    </>
-  );
-}
+const Header = () => (
+  <>
+    <ContainerHeader />
+    <NavMenu />
+  </>
+);
+export default Header;

@@ -1,11 +1,9 @@
 // libs
 import React from "react";
-
 // components
 import SongVietNamNewestItemsImage from "../SongVietNamNewestItemsImage";
 import SongVietNamNewestItemsControl from "../SongVietNamNewestItemsControl";
 import SongVietNamNewestItemsTitle from "../SongVietNamNewestItemsTitle";
-
 // orthers
 import "./style.scss";
 

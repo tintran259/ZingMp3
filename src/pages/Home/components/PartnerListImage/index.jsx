@@ -1,14 +1,12 @@
 // libs
 import React from "react";
-
-// dataSources
+// mocks
 import { partnerList } from "../../../../mocks/Home";
-
 // orthers
 import "./style.scss";
 
 const PartnerListImage = () => (
-  <div className="partner-list-image-wapper">
+  <div className="partner-list-image-wrapper">
     <ul className="list-partner">
       {partnerList &&
         partnerList.map((item) => (

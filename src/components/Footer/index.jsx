@@ -11,8 +11,8 @@ import "./style.scss";
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-wapper">
+    <footer className="footer-wrapper">
+      <div className="footer-inner">
         <FooterInfor />
         <FooterRule />
         <FooterContact />

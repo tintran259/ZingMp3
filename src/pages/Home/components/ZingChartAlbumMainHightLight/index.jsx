@@ -1,10 +1,8 @@
 // libs
 import React from "react";
-
 // components
 import ZingChartAlbumMainHightLightImage from "../ZingChartAlbumMainHightLightImage";
 import ZingChartAlbumMainHightLightTitle from "../ZingChartAlbumMainHightLightTitle";
-
 // orthers
 import "./style.scss";
 

@@ -1,11 +1,10 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 const FormSearch = () => (
-  <div className="form-search-wapper">
+  <div className="form-search-wrapper">
     <input className="form-search_input" placeholder="Nhập nội dung cần tìm" />
     <span className="form-search_btn">
       <i className="fas fa-search"></i>

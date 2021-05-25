@@ -7,7 +7,6 @@ import { useKeyPress, useHover } from "../../../../hooks";
 import ListAlbumItems from "../ListAlbumItems";
 // actions
 import { asyncGetListAlbumHot } from "../../../../actions/Home/ListVideoAction";
-
 // styles
 import "./style.scss";
 
@@ -42,11 +41,11 @@ const ListAlbum = () => {
     };
   };
   return (
-    <section className="list-album-wapper" ref={hoverRef}>
+    <section className="list-album-wrapper" ref={hoverRef}>
       <h1 className="list-album_title">
         ALBUM HOT <i className="fas fa-chevron-right icon-right"></i>
       </h1>
-      <div className="list-album-main-wapper">
+      <div className="list-album-main-wrapper">
         {albumList && albumList.map((item) => <ListAlbumItems key={item.id} item={item} />)}
       </div>
       <div className="btn-next-and-pre">

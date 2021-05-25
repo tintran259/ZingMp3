@@ -1,12 +1,9 @@
 // libs
 import React from "react";
-
 // components
 import NavItems from "../../components/NavItems";
-
-// dataSources
+// mocks
 import { menuItems } from "../../../../mocks/Nav";
-
 // orthers
 import "./style.scss";
 

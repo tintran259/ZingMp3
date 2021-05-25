@@ -1,11 +1,10 @@
 // libs
 import React from "react";
-
 // orthers
 import "./style.scss";
 
 const FooterRule = () => (
-  <ul className="footer-rule-wapper">
+  <ul className="footer-rule-wrapper">
     <li>
       <a href="/">Giới Thiệu</a>
     </li>

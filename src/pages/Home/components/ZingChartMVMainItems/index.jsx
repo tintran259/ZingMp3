@@ -1,10 +1,8 @@
 // libs
 import React from "react";
-
 // components
 import ZingChartMVMainsItemsImage from "../ZingChartMVMainsItemsImage";
 import ZingChartMVMainItemsDes from "../ZingChartMVMainItemsDes";
-
 // orthers
 import "./style.scss";
 
