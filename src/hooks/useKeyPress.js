@@ -1,5 +1,5 @@
 // libs
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
 import { useEventListener } from "./useEventListener";
 
 // Constants
@@ -9,6 +9,7 @@ export default function useKeypress(page, isHovered) {
   const { KEY_CODE } = CONSTANTS;
   const { PAGE_UP, PAGE_DOWN } = KEY_CODE;
   const [pageItem, setPageItem] = useState(page);
+  const currentPage = useRef(null);
   useEffect(() => {
     setPageItem(page);
   }, [page]);
@@ -17,12 +18,25 @@ export default function useKeypress(page, isHovered) {
       e.preventDefault();
       switch (e.keyCode) {
         case PAGE_UP:
-          return setPageItem(pageItem + 1);
+          if (currentPage.current) {
+            clearTimeout(currentPage.current);
+          }
+          currentPage.current = setTimeout(() => {
+            setPageItem(pageItem + 1);
+          }, 500);
+          break;
         case PAGE_DOWN:
-          return setPageItem(pageItem - 1);
+          if (currentPage.current) {
+            clearTimeout(currentPage.current);
+          }
+          currentPage.current = setTimeout(() => {
+            setPageItem(pageItem - 1);
+          }, 500);
+          break;
         default:
           return pageItem;
       }
+      return pageItem;
     },
     [pageItem, PAGE_UP, PAGE_DOWN]
   );
