@@ -18,13 +18,7 @@ const ListVideo = () => {
   const resultPage = useKeyPress(isHovered);
   // update page when use event Key
   useEffect(() => {
-    if (resultPage <= 0) {
-      setPage(1);
-    } else if (resultPage >= 3) {
-      setPage(3);
-    } else {
-      setPage(resultPage);
-    }
+    setPage(resultPage);
   }, [resultPage]);
   // fetch API
   useEffect(() => {
