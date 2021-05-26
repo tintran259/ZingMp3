@@ -13,12 +13,18 @@ import "./style.scss";
 const ListVideo = () => {
   const dispatch = useDispatch();
   const videoSongList = useSelector((state) => state.ListVideoReducer.listVideo);
-  const [page, setPage] = useState(8);
+  const [page, setPage] = useState(1);
   const [hoverRef, isHovered] = useHover();
-  const resultPage = useKeyPress(page, isHovered);
+  const resultPage = useKeyPress(isHovered);
   // update page when use event Key
   useEffect(() => {
-    setPage(resultPage);
+    if (resultPage <= 0) {
+      setPage(1);
+    } else if (resultPage >= 3) {
+      setPage(3);
+    } else {
+      setPage(resultPage);
+    }
   }, [resultPage]);
   // fetch API
   useEffect(() => {
@@ -49,13 +55,18 @@ const ListVideo = () => {
       <div className="list-video-panigation">
         <button
           disabled={page === 1 && true}
-          onClick={debounceNextAndPrePage(handlePrePage, 500)}
+          onClick={debounceNextAndPrePage(handlePrePage, 300)}
           className="btn-panigation"
           type="button"
         >
           Pre
         </button>
-        <button onClick={debounceNextAndPrePage(handleNextPage, 500)} className="btn-panigation" type="button">
+        <button
+          disabled={page === 3 && true}
+          onClick={debounceNextAndPrePage(handleNextPage, 300)}
+          className="btn-panigation"
+          type="button"
+        >
           Next
         </button>
       </div>
