@@ -17,7 +17,7 @@ const ListAlbum = () => {
   const albumList = useSelector((state) => state.ListVideoReducer.listAlbumHot);
   const [page, setPage] = useState(1);
   const [hoverRef, isHovered] = useHover();
-  const resultPage = useKeyPress(page, isHovered);
+  const resultPage = useKeyPress(isHovered);
   // fetch api
   useEffect(() => {
     dispatch(asyncGetListAlbumHot({ page }));
@@ -53,7 +53,7 @@ const ListAlbum = () => {
       <div className="btn-next-and-pre">
         <button
           disabled={page === 0 && true}
-          onClick={debounceNextAndPrePage(handlePrePage, 500)}
+          onClick={debounceNextAndPrePage(handlePrePage, 300)}
           type="button"
           className="btn-inner"
         >
@@ -61,7 +61,7 @@ const ListAlbum = () => {
         </button>
         <button
           disabled={page === 3 && true}
-          onClick={debounceNextAndPrePage(handleNextPage, 500)}
+          onClick={debounceNextAndPrePage(handleNextPage, 300)}
           type="button"
           className="btn-inner"
         >
