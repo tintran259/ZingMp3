@@ -2,7 +2,7 @@
 import React, { memo, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // hooks
-import { useKeyPress, useHover } from "../../../../hooks";
+import { useKeyPress, useHover, useSetting } from "../../../../hooks";
 // components
 import ListAlbumItems from "../ListAlbumItems";
 // actions
@@ -11,11 +11,12 @@ import { asyncGetListAlbumHot } from "../../../../actions/Home/ListVideoAction";
 import "./style.scss";
 
 const ListAlbum = () => {
+  const { currentColor } = useSetting();
   const dispatch = useDispatch();
   const albumList = useSelector((state) => state.ListVideoReducer.listAlbumHot);
   const [page, setPage] = useState(1);
   const [hoverRef, isHovered] = useHover();
-  const resultPage = useKeyPress(page, isHovered);
+  const resultPage = useKeyPress(isHovered);
   // fetch api
   useEffect(() => {
     dispatch(asyncGetListAlbumHot({ page }));
@@ -41,8 +42,8 @@ const ListAlbum = () => {
     };
   };
   return (
-    <section className="list-album-wrapper" ref={hoverRef}>
-      <h1 className="list-album_title">
+    <section className="list-album-wapper" ref={hoverRef}>
+      <h1 className="list-album_title" style={{ color: currentColor }}>
         ALBUM HOT <i className="fas fa-chevron-right icon-right"></i>
       </h1>
       <div className="list-album-main-wrapper">
@@ -51,7 +52,7 @@ const ListAlbum = () => {
       <div className="btn-next-and-pre">
         <button
           disabled={page === 0 && true}
-          onClick={debounceNextAndPrePage(handlePrePage, 500)}
+          onClick={debounceNextAndPrePage(handlePrePage, 300)}
           type="button"
           className="btn-inner"
         >
@@ -59,7 +60,7 @@ const ListAlbum = () => {
         </button>
         <button
           disabled={page === 3 && true}
-          onClick={debounceNextAndPrePage(handleNextPage, 500)}
+          onClick={debounceNextAndPrePage(handleNextPage, 300)}
           type="button"
           className="btn-inner"
         >

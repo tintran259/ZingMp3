@@ -1,18 +1,20 @@
 // libs
-import React, { useContext } from "react";
+import React from "react";
+// hooks
+import { useSetting, useMultiLang } from "../../../../hooks";
 // components
 import SongVietNamListRightItems from "../SongVietNamNewestItems";
 // mocks
 import { albumList } from "../../../../mocks/Home";
 // orthers
 import "./style.scss";
-import { MultiLangContext } from "../../../../context/multiLang";
 
 const SongVietNamNewest = () => {
-  const { dictionnary } = useContext(MultiLangContext);
+  const { dictionnary } = useMultiLang();
+  const { currentColor } = useSetting();
   return (
-    <div className="song-vietnam-newest-wrapper">
-      <h1 className="song-vietnam-newest_title">
+    <div className="song-vietnam-newest-wapper">
+      <h1 style={{ color: currentColor }} className="song-vietnam-newest_title">
         {dictionnary.newSongVietnam} <i className="fas fa-chevron-right icon-right"></i>
       </h1>
       <ul className="list-Song-ul">

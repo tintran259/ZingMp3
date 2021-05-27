@@ -6,10 +6,11 @@ import NavMenu from "./mains/NavMenu";
 // orthers
 import "./style.scss";
 
-const Header = () => (
-  <>
-    <ContainerHeader />
-    <NavMenu />
-  </>
-);
-export default Header;
+export default function Header() {
+  return (
+    <section className="header-wrapper">
+      <ContainerHeader />
+      <NavMenu />
+    </section>
+  );
+}
