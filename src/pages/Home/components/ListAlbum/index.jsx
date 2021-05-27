@@ -2,7 +2,7 @@
 import React, { memo, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // hooks
-import { useKeyPress, useHover } from "../../../../hooks";
+import { useKeyPress, useHover, useSetting } from "../../../../hooks";
 // components
 import ListAlbumItems from "../ListAlbumItems";
 // actions
@@ -12,6 +12,7 @@ import { asyncGetListAlbumHot } from "../../../../actions/Home/ListVideoAction";
 import "./style.scss";
 
 const ListAlbum = () => {
+  const { currentColor } = useSetting();
   const dispatch = useDispatch();
   const albumList = useSelector((state) => state.ListVideoReducer.listAlbumHot);
   const [page, setPage] = useState(1);
@@ -43,7 +44,7 @@ const ListAlbum = () => {
   };
   return (
     <section className="list-album-wapper" ref={hoverRef}>
-      <h1 className="list-album_title">
+      <h1 className="list-album_title" style={{ color: currentColor }}>
         ALBUM HOT <i className="fas fa-chevron-right icon-right"></i>
       </h1>
       <div className="list-album-main-wapper">

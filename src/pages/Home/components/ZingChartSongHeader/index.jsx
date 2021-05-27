@@ -1,15 +1,16 @@
 // libs
-import React, { useContext } from "react";
-
+import React from "react";
+// hooks
+import { useSetting, useMultiLang } from "../../../../hooks";
 // orthers
 import "./style.scss";
-import { MultiLangContext } from "../../../../context/multiLang";
 
 export default function HeaderZingChart() {
-  const { dictionnary } = useContext(MultiLangContext);
+  const { dictionnary } = useMultiLang();
+  const { currentColor } = useSetting();
   return (
     <div className="header-zing-chart-song-bg">
-      <h1 className="zingchart-title">
+      <h1 className="zingchart-title" style={{ color: currentColor }}>
         {dictionnary.zingchartWeek}
         <i className="fas fa-chevron-right icon-zingchart"></i>
       </h1>

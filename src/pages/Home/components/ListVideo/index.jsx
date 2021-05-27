@@ -2,7 +2,7 @@
 import React, { memo, useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // hooks
-import { useKeyPress, useHover } from "../../../../hooks";
+import { useKeyPress, useHover, useSetting } from "../../../../hooks";
 // components
 import ListVideoItems from "../ListVideoItems";
 // actions
@@ -11,6 +11,7 @@ import { asyncGetListVideo } from "../../../../actions/Home/ListVideoAction";
 import "./style.scss";
 
 const ListVideo = () => {
+  const { currentColor } = useSetting();
   const dispatch = useDispatch();
   const videoSongList = useSelector((state) => state.ListVideoReducer.listVideo);
   const [page, setPage] = useState(8);
@@ -43,7 +44,7 @@ const ListVideo = () => {
   };
   return (
     <section className="list-video-wapper" ref={hoverRef}>
-      <h1 className="list-video_title">
+      <h1 className="list-video_title" style={{ color: currentColor }}>
         VIDEO HOT <i className="fas fa-chevron-right icon-right"></i>
       </h1>
       <div className="list-video-panigation">

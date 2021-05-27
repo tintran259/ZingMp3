@@ -1,34 +1,27 @@
 // libs
-import React, { useContext } from "react";
-
+import React from "react";
+// hooks
+import { useSetting } from "../../../../hooks";
 // components
 import Logo from "../../components/Logo";
 import FormSearch from "../../components/FormSearch";
 import MenuHeader from "../../components/MenuHeader";
 import ButtonLogin from "../../components/ButtonLogin";
-
+// styled-components
+import { StyledHeader } from "./StyledContainerHeader";
 // orthers
 import "./style.scss";
-import { MultiLangContext } from "../../../../context/multiLang";
 
 export default function ContainerHeader() {
-  const { handleChangeVN, handleChangeEN } = useContext(MultiLangContext);
+  const { currentColor, isFixed } = useSetting();
   return (
-    <header className="container-header-wapper">
+    <StyledHeader isShow={isFixed} className="container-header-wapper" style={{ backgroundColor: currentColor }}>
       <div className="container">
         <Logo />
         <FormSearch />
         <MenuHeader />
         <ButtonLogin />
       </div>
-      <span className="language-wapper">
-        <button onClick={handleChangeEN} className="btn-lang" type="button">
-          EN
-        </button>
-        <button onClick={handleChangeVN} className="btn-lang" type="button">
-          VN
-        </button>
-      </span>
-    </header>
+    </StyledHeader>
   );
 }
