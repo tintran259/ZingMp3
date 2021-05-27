@@ -2,7 +2,7 @@
 import React, { memo, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // hooks
-import { useKeyPress, useHover, useMultiColor } from "../../../../hooks";
+import { useKeyPress, useHover, useSetting } from "../../../../hooks";
 // components
 import ListAlbumItems from "../ListAlbumItems";
 // actions
@@ -12,7 +12,7 @@ import { asyncGetListAlbumHot } from "../../../../actions/Home/ListVideoAction";
 import "./style.scss";
 
 const ListAlbum = () => {
-  const { currentColor } = useMultiColor();
+  const { currentColor } = useSetting();
   const dispatch = useDispatch();
   const albumList = useSelector((state) => state.ListVideoReducer.listAlbumHot);
   const [page, setPage] = useState(1);

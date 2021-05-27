@@ -1,13 +1,13 @@
 // libs
 import React from "react";
 // hooks
-import { useMultiColor, useMultiLang } from "../../../../hooks";
+import { useSetting, useMultiLang } from "../../../../hooks";
 // orthers
 import "./style.scss";
 
 export default function HeaderZingChart() {
   const { dictionnary } = useMultiLang();
-  const { currentColor } = useMultiColor();
+  const { currentColor } = useSetting();
   return (
     <div className="header-zing-chart-song-bg">
       <h1 className="zingchart-title" style={{ color: currentColor }}>

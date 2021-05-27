@@ -14,7 +14,7 @@ import Store from "./reducer";
 import "./styles.scss";
 // Context
 import MultiLangContextProvider from "./context/multiLang";
-import MultiColorContextProvider from "./context/multiColor";
+import MultiColorContextProvider from "./context/setting";
 
 function App() {
   const { ROUTERS } = CONTANTS;

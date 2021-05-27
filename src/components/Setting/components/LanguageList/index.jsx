@@ -1,14 +1,14 @@
 // libs
-import React, { useContext, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Radio } from "antd";
-// context
-import { MultiLangContext } from "../../../../context/multiLang";
+// hooks
+import { useMultiLang } from "../../../../hooks";
 // orthers
 import "./style.scss";
 
 const LanguageList = () => {
-  const { handleChangeVN, handleChangeEN } = useContext(MultiLangContext);
-  const [value, setValue] = React.useState(1);
+  const { handleChangeVN, handleChangeEN } = useMultiLang();
+  const [value, setValue] = useState(1);
   useEffect(() => {
     if (value === 1) {
       handleChangeVN();

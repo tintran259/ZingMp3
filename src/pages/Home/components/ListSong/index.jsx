@@ -3,14 +3,14 @@ import React from "react";
 // components
 import ListSongItems from "../ListSongItems";
 // hooks
-import { useMultiColor } from "../../../../hooks";
+import { useSetting } from "../../../../hooks";
 // mocks
 import { TopicSongList } from "../../../../mocks/Home";
 // styles
 import "./style.scss";
 
 export default function ListSong() {
-  const { currentColor } = useMultiColor();
+  const { currentColor } = useSetting();
   return (
     <section className="list-song-wapper">
       <span style={{ color: currentColor }} className="list-song_title">

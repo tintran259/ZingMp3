@@ -1,14 +1,14 @@
 // libs
-import React, { useContext } from "react";
+import React from "react";
+// hooks
+import { useMultiLang } from "../../../../hooks";
 // components
 import LanguageList from "../LanguageList";
-// context
-import { MultiLangContext } from "../../../../context/multiLang";
 // orthers
 import "./style.scss";
 
 const Language = () => {
-  const { dictionnary } = useContext(MultiLangContext);
+  const { dictionnary } = useMultiLang();
   return (
     <div className="language-wrapper">
       <h3 className="language-title">{dictionnary.language}</h3>

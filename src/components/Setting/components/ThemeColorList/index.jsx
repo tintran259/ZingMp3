@@ -1,14 +1,14 @@
 // libs
 import React from "react";
 // hooks
-import { useMultiColor } from "../../../../hooks";
+import { useSetting } from "../../../../hooks";
 // mocks
 import { Color } from "../../../../mocks/Common";
 // orthers
 import "./style.scss";
 
 const ThemeColorList = () => {
-  const { currentColor, setCurrentColor } = useMultiColor();
+  const { currentColor, setCurrentColor } = useSetting();
   const handleChangeColor = ({ color }) => {
     setCurrentColor(color);
   };

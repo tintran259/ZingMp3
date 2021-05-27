@@ -1,7 +1,7 @@
 // libs
 import React from "react";
 // hooks
-import { useMultiColor } from "../../../../hooks";
+import { useSetting } from "../../../../hooks";
 // components
 import ArtistImageLarge from "../ArtistImageLarge";
 import ArtistRight from "../ArtistImageSub";
@@ -10,7 +10,7 @@ import ArtistRight from "../ArtistImageSub";
 import "./style.scss";
 
 export default function Artlist() {
-  const { currentColor } = useMultiColor();
+  const { currentColor } = useSetting();
   return (
     <section className="section-artlist-wapper">
       <h1 style={{ color: currentColor }} className="section-artlist_title">

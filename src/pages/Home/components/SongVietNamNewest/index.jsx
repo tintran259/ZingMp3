@@ -1,7 +1,7 @@
 // libs
 import React from "react";
 // hooks
-import { useMultiColor, useMultiLang } from "../../../../hooks";
+import { useSetting, useMultiLang } from "../../../../hooks";
 // components
 import SongVietNamListRightItems from "../SongVietNamNewestItems";
 
@@ -13,7 +13,7 @@ import "./style.scss";
 
 const SongVietNamNewest = () => {
   const { dictionnary } = useMultiLang();
-  const { currentColor } = useMultiColor();
+  const { currentColor } = useSetting();
   return (
     <div className="song-vietnam-newest-wapper">
       <h1 style={{ color: currentColor }} className="song-vietnam-newest_title">

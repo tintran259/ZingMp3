@@ -1,10 +1,10 @@
 // libs
 import React from "react";
-import { useMultiColor } from "../../../../hooks";
+import { useSetting } from "../../../../hooks";
 // hooks
 
 const HeaderNewsSong = () => {
-  const { currentColor } = useMultiColor();
+  const { currentColor } = useSetting();
   return (
     <h1 style={{ color: currentColor }} className="zingchartMV-title">
       Tin tức âm nhạc

@@ -2,7 +2,7 @@
 import React, { memo, useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // hooks
-import { useKeyPress, useHover, useMultiColor } from "../../../../hooks";
+import { useKeyPress, useHover, useSetting } from "../../../../hooks";
 // components
 import ListVideoItems from "../ListVideoItems";
 // actions
@@ -11,7 +11,7 @@ import { asyncGetListVideo } from "../../../../actions/Home/ListVideoAction";
 import "./style.scss";
 
 const ListVideo = () => {
-  const { currentColor } = useMultiColor();
+  const { currentColor } = useSetting();
   const dispatch = useDispatch();
   const videoSongList = useSelector((state) => state.ListVideoReducer.listVideo);
   const [page, setPage] = useState(8);

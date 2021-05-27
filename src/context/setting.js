@@ -1,9 +1,9 @@
 // libs
 import React, { createContext, useState } from "react";
 
-export const MultiColorAndPositionContext = createContext();
+export const MultiSettingContext = createContext();
 
-const MultiColorContextProvider = ({ children }) => {
+const MultiSettingContextProvider = ({ children }) => {
   const [currentColor, setCurrentColor] = useState("#212529");
   const [isFixed, setIsFixed] = useState(false);
   const initialValue = {
@@ -12,7 +12,7 @@ const MultiColorContextProvider = ({ children }) => {
     isFixed,
     setIsFixed,
   };
-  return <MultiColorAndPositionContext.Provider value={initialValue}>{children}</MultiColorAndPositionContext.Provider>;
+  return <MultiSettingContext.Provider value={initialValue}>{children}</MultiSettingContext.Provider>;
 };
 
-export default MultiColorContextProvider;
+export default MultiSettingContextProvider;

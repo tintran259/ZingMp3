@@ -3,7 +3,7 @@ import React from "react";
 // components
 import TopicHotItem from "../TopicHotItem";
 // hooks
-import { useMultiLang, useMultiColor } from "../../../../hooks";
+import { useMultiLang, useSetting } from "../../../../hooks";
 // mocks
 import { listTopic } from "../../../../mocks/Home";
 // orthers
@@ -11,7 +11,7 @@ import "./style.scss";
 
 export default function TopicHot() {
   const { dictionnary } = useMultiLang();
-  const { currentColor } = useMultiColor();
+  const { currentColor } = useSetting();
   return (
     <section className="topic-hot-wapper">
       <h1 style={{ color: currentColor }} className="topic-hot-title">

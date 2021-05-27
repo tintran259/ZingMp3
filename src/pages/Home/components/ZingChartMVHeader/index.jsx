@@ -1,11 +1,11 @@
 // libs
 import React from "react";
-import { useMultiColor } from "../../../../hooks";
+import { useSetting } from "../../../../hooks";
 // orthers
 import "./style.scss";
 
 const ZingChartMVHeader = () => {
-  const { currentColor } = useMultiColor();
+  const { currentColor } = useSetting();
   return (
     <div className="zing-chart-MV-header-wapper">
       <h1 style={{ color: currentColor }} className="zing-chart-MV-title">

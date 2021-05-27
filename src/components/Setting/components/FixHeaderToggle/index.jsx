@@ -2,12 +2,12 @@
 import React from "react";
 import { Switch } from "antd";
 // hooks
-import { useMultiColor } from "../../../../hooks";
+import { useSetting } from "../../../../hooks";
 // orthers
 import "./style.scss";
 
 const FixHeaderToggle = () => {
-  const { isFixed, setIsFixed } = useMultiColor();
+  const { isFixed, setIsFixed } = useSetting();
   const handleSwitch = () => {
     setIsFixed(!isFixed);
   };

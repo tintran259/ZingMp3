@@ -1,12 +1,12 @@
 // libs
 import React from "react";
 // hooks
-import { useMultiColor } from "../../../../hooks";
+import { useSetting } from "../../../../hooks";
 // orthers
 import "./style.scss";
 
 const ButtonSetting = ({ isShow, handleCloseSetting, handleOpenSetting }) => {
-  const { currentColor } = useMultiColor();
+  const { currentColor } = useSetting();
   return (
     <div className="btn-setting-drawer-handle">
       {isShow ? (

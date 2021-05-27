@@ -1,7 +1,7 @@
 // libs
 import React from "react";
 // hooks
-import { useMultiColor } from "../../../../hooks";
+import { useSetting } from "../../../../hooks";
 // components
 import Logo from "../../components/Logo";
 import FormSearch from "../../components/FormSearch";
@@ -13,7 +13,7 @@ import { StyledHeader } from "./StyledContainerHeader";
 import "./style.scss";
 
 export default function ContainerHeader() {
-  const { currentColor, isFixed } = useMultiColor();
+  const { currentColor, isFixed } = useSetting();
   return (
     <StyledHeader isShow={isFixed} className="container-header-wapper" style={{ backgroundColor: currentColor }}>
       <div className="container">
