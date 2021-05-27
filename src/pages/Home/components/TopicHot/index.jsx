@@ -1,21 +1,22 @@
 // libs
-import React, { useContext } from "react";
-
+import React from "react";
 // components
 import TopicHotItem from "../TopicHotItem";
-
+// hooks
+import { useMultiLang, useMultiColor } from "../../../../hooks";
 // mocks
 import { listTopic } from "../../../../mocks/Home";
-
 // orthers
 import "./style.scss";
-import { MultiLangContext } from "../../../../context/multiLang";
 
 export default function TopicHot() {
-  const { dictionnary } = useContext(MultiLangContext);
+  const { dictionnary } = useMultiLang();
+  const { currentColor } = useMultiColor();
   return (
     <section className="topic-hot-wapper">
-      <h1 className="topic-hot-title">{dictionnary.topicHot}</h1>
+      <h1 style={{ color: currentColor }} className="topic-hot-title">
+        {dictionnary.topicHot}
+      </h1>
       <ul className="list-topic">{listTopic && listTopic.map((item) => <TopicHotItem item={item} key={item.id} />)}</ul>
       <a className="view-more" href="">
         Xem thêm Chủ Đề khác

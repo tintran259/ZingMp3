@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { dictionaryList } from "./Dictionary";
+import dictionaryList from "./Dictionary/language";
 
 export const MultiLangContext = createContext();
 

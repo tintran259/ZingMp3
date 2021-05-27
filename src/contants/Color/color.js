@@ -1,0 +1,9 @@
+const COLOR = {
+  COLOR_PRIMARY: "#800080",
+  COLOR_DANGER: "#dc3545",
+  COLOR_SUCCESS: "#198754",
+  COLOR_WARNING: "#ffc107",
+  COLOR_DARK: "#212529",
+};
+
+export default COLOR;
